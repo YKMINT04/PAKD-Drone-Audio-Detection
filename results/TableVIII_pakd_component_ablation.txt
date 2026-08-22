@@ -1,0 +1,22 @@
+PAKD manuscript — current version — Table VIII
+Record type: derived manuscript-aligned result record
+This file is a concise result record, not a raw console or training log.
+
+Table VIII. Component ablation of PAKD on the DADS benchmark.
+
+Tabulated results:
+Variant	CE	KL	Pairwise	Confidence	Consistency	Feature KD	AUC	Non-drone | Recall	False Alarm | Rate
+CE only	√						0.7392	0.6782	0.3217
+KL KD	√	√					0.8387	0.7923	0.2077
+Pairwise only	√		√				0.8010	0.6914	0.3086
+Pairwise + confidence	√		√	√			0.7742	0.7155	0.2845
+Pairwise + confidence + consistency	√		√	√	√		0.8030	0.6791	0.3209
+Full PAKD	√		√	√	√	√	0.9484	0.8917	0.1083
+
+Checkpoint references:
+- checkpoints/checkpoint_038.pth	SHA-256=9C1A5A7EA88BA35301E95752B8A2496E3C69D2003C799F686FB1728D8DF8B1E0
+- checkpoints/checkpoint_039.pth	SHA-256=65EC82E2AE96458E8840664D4990134C661C9597629433C31B69366ED9009C99
+- checkpoints/checkpoint_040.pth	SHA-256=258BF99E1570F586D177EEA4CEEFBCC5703CA70121073434CC62B9BFC444B3A1
+- checkpoints/checkpoint_041.pth	SHA-256=EED495BEDF3EA6B6E6AF965869B16DAD413B8EC243ABAB64F381E52FECA853BF
+- checkpoints/checkpoint_034.pth	SHA-256=305803854D784F24718CC1DCE6542D4A2DF88173703F59C324AAA15D87DCDF2D
+- checkpoints/checkpoint_027.pth	SHA-256=A1BF85950DA9D84FD3FFA1F311D0C98BA7258C9E5FBF347778424DD7DCD892FE

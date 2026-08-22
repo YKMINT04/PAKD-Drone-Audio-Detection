@@ -1,0 +1,63 @@
+PAKD checkpoint-to-experiment mapping
+Scope: current manuscript
+
+Notes:
+- Each neutral checkpoint is listed exactly once.
+- Run A/B/C are neutral repeated-experiment labels; exact random seeds and training configurations are not disclosed here.
+- One checkpoint may support several paper tables when the same trained model is evaluated in multiple analyses.
+- C024 and C038 are byte-identical copies retained for their separate table-specific references.
+
+Artifact	Checkpoint file	Paper table(s)	Experiment	SHA-256
+C001	checkpoints/checkpoint_001.pth	Table II	Mel student with MTFA attention	B90D9957A255AA6AA604188382415BFD8EB96FF66270583060EF02BC4B8F64C9
+C002	checkpoints/checkpoint_002.pth	Table II	Mel student without an attention module	EFD34D645536E0FC0B903173C7AFA44187D87B77D4EF288E6414B83DF6626C95
+C003	checkpoints/checkpoint_003.pth	Table II	Mel student with SE attention	0BEF21315612A1A7A59A52F19C581179E00CF06257DAE001FA8EF6A98DEBE63B
+C004	checkpoints/checkpoint_004.pth	Table III	MFCC single-branch teacher	25213269E0C275B8E9FC3C0F8091DCA46322AC57710395BC23F04D98D8463E3F
+C005	checkpoints/checkpoint_005.pth	Table III	MFCC+LFCC two-branch teacher	FB9E7CDD8ED87987A150C2893B6AE39874F3BD7E1912CC1DEF5AA1375DAB36C9
+C006	checkpoints/checkpoint_006.pth	Table III	MFCC+Mel two-branch teacher	411F632BD2C9FB61E6CACFAF277FC9451F63A499AFAE8FE07490D5161979592D
+C007	checkpoints/checkpoint_007.pth	Table IV	AST in-domain reference model	BA241BDD8D2B9ADCE5CD49F3E2F2AA54B53A686C2164C840A48460296D8ACEBD
+C008	checkpoints/checkpoint_008.pth	Table IV	CAM++ in-domain reference model	51D161C49C4BD796BF6E3EF11D8A76F052621A90D17E598597F2D882F7354A7C
+C009	checkpoints/checkpoint_009.pth	Table IV	ConvNeXt-Tiny MFCC in-domain reference model	28913860C385402B8AB3DB436F1547005094587DD63C90B65054C87676C350AE
+C010	checkpoints/checkpoint_010.pth	Table IV	DASS in-domain reference model	7EC1999DB1A2BF24386DC16910B2C30A88EFC12165FC12259482844452B8384E
+C011	checkpoints/checkpoint_011.pth	Table IV	MobileNetV4 MFCC in-domain reference model	02EFE5093A7B694C2B0B65C134819CC17B58751249EDBEA9D384C1C6036D83BE
+C012	checkpoints/checkpoint_012.pth	Table IV	ResNet-50 MFCC in-domain reference model	4B206B2E73856DE374F433D58A4E70FD3C6D1726DA944A105F41D87505A98969
+C013	checkpoints/checkpoint_013.pth	Table IV	ViT-MediumD MFCC in-domain reference model	81CD754D4CA4507AA0EFDBBF43245F20B5CCAB31E4D6704C20187A5564738945
+C014	checkpoints/checkpoint_014.pth	Table IX	AT repeated experiment, Run A	19BAC78A8100E5DDC04A1F04843C73BDF5281FF2A5A73FB56434D9812202DAA2
+C015	checkpoints/checkpoint_015.pth	Table IX	AT repeated experiment, Run B	8ECA6072671360D2606E253D86CC2AF2ED339F18364793BF85DB5E0FF220E0A6
+C016	checkpoints/checkpoint_016.pth	Table IX	Task-loss baseline repeated experiment, Run A	A77FA5AB5D6427115AAE392DCD9503C5CE036F9AF66F296BDAAF641D89AB523D
+C017	checkpoints/checkpoint_017.pth	Table IX	Task-loss baseline repeated experiment, Run B	6B93F1212CFB6829C7FBCEFCACA294A3E771CB04E9B279219C845E28A1BF020E
+C018	checkpoints/checkpoint_018.pth	Table IX	PAKD repeated experiment, Run A	0A333B1DCB08486AC6B647CBF2EA7CCE289B2E2343B304652FD8A350711B4B5E
+C019	checkpoints/checkpoint_019.pth	Table IX	PAKD repeated experiment, Run B	79E8CD69ED9C633E4C634D8D71F65F8CF4A09260A55020D53F368A5EBB9CC116
+C020	checkpoints/checkpoint_020.pth	Tables V and VI	LFCC student trained with task loss only	86F402F3A47A2C4855D1806E5EF8E7E5C3BEC2645BA6B720A12EFBD64F1752B9
+C021	checkpoints/checkpoint_021.pth	Tables V and VI	LFCC student distilled by an LFCC-primary teacher using PAKD	8CBE311CE1D851A675BBD0417DBD193B60CD148DEE6404B56CB4F8E75DBD2C99
+C022	checkpoints/checkpoint_022.pth	Tables V and VI	LFCC student distilled by a Mel-primary teacher using PAKD	0A8BF88B88DBA9894780D937BA73508B11CB53C5C734B13756966C7E094A3A01
+C023	checkpoints/checkpoint_023.pth	Tables V and VI	LFCC student distilled by an MFCC-primary teacher using PAKD	4175C658A94BAB76D0C52E2369A79EC934DC9F27C6BEBA7F32A68B63A7396DE6
+C024	checkpoints/checkpoint_024.pth	Tables V, VI, VII and IX	Mel student trained with task loss only; also the repeated-experiment Run C baseline	9C1A5A7EA88BA35301E95752B8A2496E3C69D2003C799F686FB1728D8DF8B1E0
+C025	checkpoints/checkpoint_025.pth	Tables V and VI	Mel student distilled by an LFCC-primary teacher using PAKD	A76A34858F4698929A6A60E072CFCC58911581A4F0A9D0C19ED66909AA85E5E8
+C026	checkpoints/checkpoint_026.pth	Tables V and VI	Mel student distilled by a Mel-primary teacher using PAKD	5CDD59EE1BEE83ED64CCE629CFD0541CA4FA5BB6D7F8CFD191D163988129BF52
+C027	checkpoints/checkpoint_027.pth	Tables V, VI, VII, VIII, IX and XI	Selected Mel PAKD student distilled by the MFCC-primary teacher; also Full PAKD, repeated-experiment Run C and deployment model	A1BF85950DA9D84FD3FFA1F311D0C98BA7258C9E5FBF347778424DD7DCD892FE
+C028	checkpoints/checkpoint_028.pth	Tables V and VI	MFCC student trained with task loss only	49573DF9E88B962422BB77686037C5CA4A74043B402E42122E720DAC4A8302FF
+C029	checkpoints/checkpoint_029.pth	Tables V and VI	MFCC student distilled by an LFCC-primary teacher using PAKD	CE8BBC2816282492805451F4C8BC056F8182392A4C76B61E921AF459841F5837
+C030	checkpoints/checkpoint_030.pth	Tables V and VI	MFCC student distilled by a Mel-primary teacher using PAKD	E879B9822917CC52EA4D4E04AD6910DCF2EFEED01A5B91A12CC3F1CD78B51866
+C031	checkpoints/checkpoint_031.pth	Tables V and VI	MFCC student distilled by an MFCC-primary teacher using PAKD	F174ACE2847DD967BCD92C64402FCDAEF4B715C645073D0EC6720641894BBAA8
+C032	checkpoints/checkpoint_032.pth	Tables VII and IX	Mel AT student in the controlled KD comparison; also repeated-experiment Run C	C47679507CA8C9B21C0F720881A626882A905CF84E3C59878E517183FE4F6F07
+C033	checkpoints/checkpoint_033.pth	Table VII	Mel student trained with DKD	017B6B01C39283738B37A3783D71ABF264FAA7664B285F511EB324B1183F66AB
+C034	checkpoints/checkpoint_034.pth	Tables VII and VIII	Mel student trained with Hinton KD; reused as the KL-KD component-ablation model	305803854D784F24718CC1DCE6542D4A2DF88173703F59C324AAA15D87DCDF2D
+C035	checkpoints/checkpoint_035.pth	Table VII	Mel student trained with NormKD	193E194C55A15B3BB6121C6FD4B91715AF098893EB71FD9E773F1C38AE30017D
+C036	checkpoints/checkpoint_036.pth	Table VII	Mel student trained with RKD	8F13DA3A0C57D9C8FCE324DBDA9A1B120E8752DF249369340CF08C13E114B3DA
+C037	checkpoints/checkpoint_037.pth	Table VII	Mel student trained with the TRKD-inspired method	3A050FF435BC2CB42DC2E9B55CA6A62C87C37CF626B335DF6D8E7768D27598E7
+C038	checkpoints/checkpoint_038.pth	Table VIII	CE-only component-ablation checkpoint; byte-identical to C024	9C1A5A7EA88BA35301E95752B8A2496E3C69D2003C799F686FB1728D8DF8B1E0
+C039	checkpoints/checkpoint_039.pth	Table VIII	Pairwise preference + confidence + branch-consistency ablation	65EC82E2AE96458E8840664D4990134C661C9597629433C31B69366ED9009C99
+C040	checkpoints/checkpoint_040.pth	Table VIII	Pairwise preference + confidence ablation	258BF99E1570F586D177EEA4CEEFBCC5703CA70121073434CC62B9BFC444B3A1
+C041	checkpoints/checkpoint_041.pth	Table VIII	Pairwise-preference-only ablation	EED495BEDF3EA6B6E6AF965869B16DAD413B8EC243ABAB64F381E52FECA853BF
+C042	checkpoints/checkpoint_042.pth	Table X	Three-class Mel student trained with AT	C7A091D67206AB94DACE67864387B0C9E4B3A5EE8972DA0AD7ED4FF5C4E102A8
+C043	checkpoints/checkpoint_043.pth	Table X	Three-class Mel student trained with task loss only	4E3AE0833F67ED6953AE39D65229F6A86F2F3CA053731930E32B69239A603BDA
+C044	checkpoints/checkpoint_044.pth	Table X	Three-class Mel student trained with DKD	5C098EDFEA0D208AF19F1BC66238B5EFA3DED62C24396DBC2C98C3AC71E01491
+C045	checkpoints/checkpoint_045.pth	Table X	Three-class Mel student trained with Hinton KD	1F88FEAEE709E7C519F87ED9AD4AFAE46F0174E121384578AEEC733A123BAA3B
+C046	checkpoints/checkpoint_046.pth	Table X	Three-class Mel student trained with NormKD	AC7D345F4DA104399802ACCC00FC44023691BA7F2DA6C0CE428754E76004E681
+C047	checkpoints/checkpoint_047.pth	Table X	Three-class Mel PAKD student distilled by the MFCC-primary teacher	E5327E13FECCF8B69594B74C053590FAF47A14A4EEC24176304629D771C67918
+C048	checkpoints/checkpoint_048.pth	Table X	Three-class Mel student trained with RKD	7AFA243D124F90857910585337024C5C6B144506F0E3E0603972F9B08D0A91F2
+C049	checkpoints/checkpoint_049.pth	Table X	Three-class Mel student trained with the TRKD-inspired method	131BF669B5E827DA188C3B8B8B7D14EF9903831095350EC8BEAFB93952914D95
+C050	checkpoints/checkpoint_050.pth	Narrative result (no standalone table)	LFCC-primary TripleFusion binary teacher used for the external DADS teacher evaluation	DAA8BA673CCC8CAAA69166C50F65CD582207D70B219C73C29FB947CBB51A41EE
+C051	checkpoints/checkpoint_051.pth	Narrative result (no standalone table)	Mel-primary TripleFusion binary teacher used in the binary teacher comparison	33CCD61B8C15DF0F4DA3C011AB924BB6CFEE26434DE8549F52A2784C8BDB1D1E
+C052	checkpoints/checkpoint_052.pth	Tables I and III	Selected MFCC-primary TripleFusion binary teacher	DD2F28F2D93D8C7CFCFB2672DD3CCBE56EC900A9F65F165E731E767193F9E7A5
+C053	checkpoints/checkpoint_053.pth	Table X	MFCC-primary TripleFusion teacher for the three-class extension	519C9296CEED779261044FA9E63F612974EE15200FECCBD6784333005438A532

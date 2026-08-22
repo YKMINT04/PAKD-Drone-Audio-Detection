@@ -1,0 +1,16 @@
+PAKD manuscript — current version — Table II
+Record type: derived manuscript-aligned result record
+This file is a concise result record, not a raw console or training log.
+
+Table II. Single-seed in-domain comparison of attention variants on the self-collected test set.
+
+Tabulated results:
+Model	Module	Parallel temporal filtering	Cross-branch aggregation	AUC	Drone P	Drone R	Drone F1	Non-drone P	Non-drone R	Non-drone F1
+Mel student	None	×	×	0.9945	0.9448	0.8706	0.9062	0.9901	0.9961	0.9931
+Mel student	SE	×	×	0.9940	0.9064	0.8938	0.9001	0.9919	0.9929	0.9924
+Mel student	MTFA	√	√	0.9969	0.9474	0.9045	0.9254	0.9927	0.9961	0.9944
+
+Checkpoint references:
+- checkpoints/checkpoint_001.pth	SHA-256=B90D9957A255AA6AA604188382415BFD8EB96FF66270583060EF02BC4B8F64C9
+- checkpoints/checkpoint_002.pth	SHA-256=EFD34D645536E0FC0B903173C7AFA44187D87B77D4EF288E6414B83DF6626C95
+- checkpoints/checkpoint_003.pth	SHA-256=0BEF21315612A1A7A59A52F19C581179E00CF06257DAE001FA8EF6A98DEBE63B

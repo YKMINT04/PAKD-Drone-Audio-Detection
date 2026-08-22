@@ -1,0 +1,17 @@
+PAKD manuscript — current version — Table XI
+Record type: derived manuscript-aligned result record
+This file is a concise result record, not a raw console or training log.
+
+Table XI. Edge-deployment records.
+
+Tabulated results:
+Platform	Runtime	Quantitative record	Scope
+RK3568	ONNX Runtime (CPU)	37–41 ms / 1-s input	Network inference
+NXP i.MX6ULL	ONNX Runtime (CPU)	>300 h continuous	Stability test
+
+Checkpoint references:
+- checkpoints/checkpoint_027.pth	SHA-256=A1BF85950DA9D84FD3FFA1F311D0C98BA7258C9E5FBF347778424DD7DCD892FE
+
+Evidence note:
+- The latency and continuous-operation values are retained as engineering records.
+- The original serial telemetry stream was not retained; fresh measurements can be produced with the final benchmark code.

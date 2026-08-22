@@ -1,0 +1,17 @@
+PAKD manuscript — current version — Table I
+Record type: derived manuscript-aligned result record
+This file is a concise result record, not a raw console or training log.
+
+Table I. Quantitative evaluation of feature representation quality for the proposed TripleFusion teacher.
+
+Tabulated results:
+Metric (direction)	MFCC-only	Post-Fusion	Relative change
+Silhouette Score	0.1647	0.4612	+180.02%
+Davies-Bouldin	2.1134	0.8427	-60.13%
+Intra-class Dist	20.1329	13.9752	-30.59%
+Inter-class Dist	19.0528	33.1675	+74.08%
+Sep/Compact Ratio	0.9464	2.3733	+150.78%
+
+Checkpoint references:
+- checkpoints/checkpoint_004.pth	SHA-256=25213269E0C275B8E9FC3C0F8091DCA46322AC57710395BC23F04D98D8463E3F
+- checkpoints/checkpoint_052.pth	SHA-256=DD2F28F2D93D8C7CFCFB2672DD3CCBE56EC900A9F65F165E731E767193F9E7A5
