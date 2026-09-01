@@ -1,78 +1,80 @@
-# PAKD：面向无人机声学检测的偏好对齐知识蒸馏
+# PAKD: Preference-Aligned Knowledge Distillation for Drone Acoustic Detection
 
-本仓库是 PAKD（Preference-Aligned Knowledge Distillation）无人机声学检测研究的配套公开仓库，用于提供与当前论文稿件相对应的模型权重和实验结果记录。当前送审材料已通过 `v1.0-review-materials` 标签固化，便于审稿人与读者按照论文 Tables 1–12 核查主要实验。
+**English** | [简体中文](README_zh-CN.md)
 
-## 当前公开内容
+This repository accompanies our study on Preference-Aligned Knowledge Distillation (PAKD) for drone acoustic detection. It provides model checkpoints and experimental result records corresponding to the current manuscript. The review materials are preserved under the `v1.0-review-materials` tag so that reviewers and readers can verify the principal experiments reported in Tables 1–12.
 
-- 53 个与论文实验对应的模型检查点，统一存放于 `checkpoints/`，并通过 Git LFS 管理；
-- 12 个与论文 Tables 1–12 一一对应的结果记录，统一存放于 `results/`；
-- 检查点—实验—论文表格映射；
-- 覆盖二分类教师模型、轻量学生模型、同域测试、DADS 跨数据集测试、知识蒸馏方法比较、PAKD 组件消融、重复实验、三分类扩展、八麦克风阵列现场实验和边缘部署实验。
+## Currently available materials
 
-## 仓库目录
+- 53 model checkpoints corresponding to experiments reported in the manuscript, stored in `checkpoints/` and managed with Git LFS;
+- 12 result records corresponding one-to-one with Tables 1–12, stored in `results/`;
+- a checkpoint-to-experiment-to-table mapping;
+- coverage of binary teacher models, lightweight student models, in-domain evaluation, cross-dataset evaluation on DADS, comparisons of knowledge-distillation methods, PAKD component ablations, repeated experiments, the three-class extension, eight-microphone-array field experiments, and edge deployment.
 
-- `checkpoints/`：论文所报告实验对应的模型检查点；
-- `results/`：Tables 1–12 的数值结果记录；
-- `docs/checkpoint_experiment_mapping.txt`：每个检查点对应的论文表格与实验说明；
+## Repository structure
 
-## 论文实验与模型检查点
+- `checkpoints/`: model checkpoints corresponding to the experiments reported in the manuscript;
+- `results/`: numerical result records for Tables 1–12;
+- `docs/checkpoint_experiment_mapping.txt`: mapping from each checkpoint to its experiment and manuscript table.
 
-检查点使用 `C001`–`C053` 的中性编号。完整文件名及其对应实验见 `docs/checkpoint_experiment_mapping.txt`。
+## Manuscript experiments and model checkpoints
 
-| 论文位置 | 实验内容 | 对应检查点 | 结果文件 |
+The checkpoints use neutral identifiers `C001`–`C053`. Their complete filenames and experiment associations are listed in `docs/checkpoint_experiment_mapping.txt`.
+
+| Manuscript location | Experiment | Checkpoint(s) | Result file |
 | --- | --- | --- | --- |
-| Table 1 | MFCC、LFCC 与 Mel 表示的定量分析，以及所选 MFCC-primary TripleFusion 二分类教师 | `C052` | `results/Table1_feature_representation.txt` |
-| Table 2 | 轻量 Mel 学生的注意力结构比较：无注意力、SE 和 MTFA | `C001`–`C003` | `results/Table2_mtfa_ablation.txt` |
-| Table 3 | 教师分支消融：MFCC 单分支、MFCC+LFCC、MFCC+Mel 与完整 TripleFusion 教师 | `C004`–`C006`, `C052` | `results/Table3_teacher_branch_ablation.txt` |
-| Table 4 | 自采测试集上的参考模型比较：AST、CAM++、ConvNeXt-Tiny、DASS、MobileNetV4、ResNet-50、ViT-MediumD和所选TripleFusion教师 | `C007`–`C013`, `C052` | `results/Table4_in_domain_reference_comparison.txt` |
-| Table 5 | 自采测试集上的学生任务学习与 PAKD 蒸馏结果；覆盖 LFCC、Mel、MFCC 学生及不同主教师组合 | `C020`–`C031` | `results/Table5_in_domain_distillation.txt` |
-| Table 6 | 完整 DADS 外部数据上的教师—学生组合矩阵与分类别跨数据集结果 | `C020`–`C031` | `results/Table6_teacher_student_matrix_dads.txt` |
-| Table 7 | DADS 上的蒸馏策略比较：任务损失、AT、Hinton KD、NormKD、TRKD-inspired、DKD、RKD 与 PAKD | `C024`, `C027`, `C032`–`C037` | `results/Table7_kd_strategy_comparison_dads.txt` |
-| Table 8 | PAKD 组件消融：CE/KL、成对偏好、置信度、分支一致性和特征蒸馏 | `C027`, `C034`, `C038`–`C041` | `results/Table8_pakd_component_ablation.txt` |
-| Table 9 | AT、任务损失学生与 PAKD 学生的多次跨数据集实验 | `C014`–`C019`, `C024`, `C027`, `C032` | `results/Table9_repeated_experiments.txt` |
-| Table 10 | 三分类扩展：任务损失、AT、Hinton KD、NormKD、TRKD-inspired、DKD、RKD、PAKD 及三分类 TripleFusion 教师 | `C042`–`C049`, `C053` | `results/Table10_three_class_results.txt` |
-| Table 11 | 冻结Mel-PAKD学生在31组5–100 m无人机及室内/室外背景阵列录音上的10 s片段识别结果 | `C027` | `results/Table11_array_assisted_field_recognition.txt` |
-| Table 12 | 所选轻量 Mel-PAKD 学生的边缘设备部署记录 | `C027` | `results/Table12_edge_deployment_records.txt` |
+| Table 1 | Quantitative analysis of MFCC, LFCC, and Mel representations, together with the selected MFCC-primary TripleFusion binary teacher | `C052` | `results/Table1_feature_representation.txt` |
+| Table 2 | Attention-structure comparison for the lightweight Mel student: no attention, SE, and MTFA | `C001`–`C003` | `results/Table2_mtfa_ablation.txt` |
+| Table 3 | Teacher-branch ablation: MFCC only, MFCC+LFCC, MFCC+Mel, and the complete TripleFusion teacher | `C004`–`C006`, `C052` | `results/Table3_teacher_branch_ablation.txt` |
+| Table 4 | Reference-model comparison on the self-collected test set: AST, CAM++, ConvNeXt-Tiny, DASS, MobileNetV4, ResNet-50, ViT-MediumD, and the selected TripleFusion teacher | `C007`–`C013`, `C052` | `results/Table4_in_domain_reference_comparison.txt` |
+| Table 5 | Student task learning and PAKD distillation on the self-collected test set, covering LFCC, Mel, and MFCC students with different primary-teacher configurations | `C020`–`C031` | `results/Table5_in_domain_distillation.txt` |
+| Table 6 | Teacher–student matrix and class-wise cross-dataset results on the complete external DADS archive | `C020`–`C031` | `results/Table6_teacher_student_matrix_dads.txt` |
+| Table 7 | Comparison of distillation strategies on DADS: task loss, AT, Hinton KD, NormKD, TRKD-inspired, DKD, RKD, and PAKD | `C024`, `C027`, `C032`–`C037` | `results/Table7_kd_strategy_comparison_dads.txt` |
+| Table 8 | PAKD component ablation: CE/KL, pairwise preference, confidence, branch consistency, and feature distillation | `C027`, `C034`, `C038`–`C041` | `results/Table8_pakd_component_ablation.txt` |
+| Table 9 | Repeated cross-dataset experiments for AT, the task-loss student, and the PAKD student | `C014`–`C019`, `C024`, `C027`, `C032` | `results/Table9_repeated_experiments.txt` |
+| Table 10 | Three-class extension: task loss, AT, Hinton KD, NormKD, TRKD-inspired, DKD, RKD, PAKD, and the three-class TripleFusion teacher | `C042`–`C049`, `C053` | `results/Table10_three_class_results.txt` |
+| Table 11 | Recognition results of the frozen Mel-PAKD student on 31 array recordings collected at 5–100 m and in indoor/outdoor non-drone scenes, evaluated using 10-s clips | `C027` | `results/Table11_array_assisted_field_recognition.txt` |
+| Table 12 | Edge-device deployment records for the selected lightweight Mel-PAKD student | `C027` | `results/Table12_edge_deployment_records.txt` |
 
-除表格实验外，`C050`–`C052` 分别对应 LFCC-primary、Mel-primary 和所选 MFCC-primary TripleFusion 二分类教师，用于论文正文中的教师模型比较及 DADS 外部评价。部分模型在训练完成后被用于多个分析，因此同一检查点可同时对应多张论文表格；这种复用关系已在映射文件中明确记录。
+In addition to the tabulated experiments, `C050`–`C052` correspond respectively to the LFCC-primary, Mel-primary, and selected MFCC-primary TripleFusion binary teachers used in the teacher-model comparison and external DADS evaluation described in the manuscript. A trained model may support more than one analysis; these reuse relationships are explicitly recorded in the mapping file.
 
-## 主要实验材料说明
+## Overview of the experimental materials
 
-### 1. 教师模型与声学表示
+### 1. Teacher models and acoustic representations
 
-教师相关检查点覆盖 MFCC、LFCC 和 Mel 分支，以及单分支、双分支和完整 TripleFusion 结构。Table 1 与 Table 3 用于说明声学表示选择和教师分支融合的作用；正文中的外部评价进一步记录不同主分支教师在 DADS 上的表现。
+The teacher checkpoints cover MFCC, LFCC, and Mel branches, as well as single-branch, two-branch, and complete TripleFusion structures. Tables 1 and 3 examine acoustic-representation selection and teacher-branch fusion. The external evaluations reported in the manuscript additionally compare TripleFusion teachers with different primary branches on DADS.
 
-### 2. 轻量学生与 MTFA
+### 2. Lightweight student and MTFA
 
-Table 2 对应的三个检查点用于比较无注意力、SE 和 MTFA。所选学生采用 Mel 输入与 MTFA 结构，并作为后续 PAKD 蒸馏和边缘部署的学生网络。
+The three checkpoints associated with Table 2 compare no attention, SE, and MTFA. The selected student uses Mel input and the MTFA architecture and serves as the student network for subsequent PAKD distillation and edge deployment.
 
-### 3. 同域与跨数据集蒸馏
+### 3. In-domain and cross-dataset distillation
 
-Tables 5 和 6 共同覆盖 LFCC、Mel、MFCC 三类学生及 LFCC-primary、Mel-primary、MFCC-primary 教师组合。Table 5 记录自采测试集结果，Table 6 记录不参与训练的 DADS 外部数据结果，从而呈现同域性能与跨数据集泛化能力。
+Tables 5 and 6 jointly cover LFCC, Mel, and MFCC students distilled from LFCC-primary, Mel-primary, and MFCC-primary teachers. Table 5 reports results on the self-collected test set, whereas Table 6 reports results on the external DADS archive, which was not used for training. Together, they present in-domain performance and cross-dataset generalization.
 
-### 4. 知识蒸馏对比与 PAKD 消融
+### 4. Knowledge-distillation comparisons and PAKD ablations
 
-Table 7 收录任务损失学生、经典蒸馏方法、近期代表性蒸馏方法和 PAKD 的对比检查点。Table 8 进一步对应 PAKD 的成对偏好、置信度加权、分支一致性和特征蒸馏等组成部分，用于核查完整方法及各消融变体。
+Table 7 contains checkpoints for the task-loss student, classical distillation methods, recent representative distillation methods, and PAKD. Table 8 further maps the pairwise-preference, confidence-weighting, branch-consistency, and feature-distillation components of PAKD, enabling verification of the complete method and its ablation variants.
 
-### 5. 重复实验、三分类、阵列拓展与部署
+### 5. Repeated experiments, three-class extension, array extension, and deployment
 
-Table 9 汇总 AT、任务损失学生和 PAKD 学生的多次实验。Table 10 将教师—学生蒸馏扩展到三分类任务，并提供所列各方法和三分类教师的检查点。Table 11 记录冻结 Mel-PAKD 学生在 31 组 5–100 m 无人机及室内/室外背景阵列录音上的 10 s 片段识别结果，Table 12 记录同一轻量学生的边缘部署结果。
+Table 9 summarizes repeated experiments for AT, the task-loss student, and the PAKD student. Table 10 extends teacher–student distillation to the three-class task and provides checkpoints for the listed methods and the three-class teacher. Table 11 reports 10-s-clip recognition results obtained by the frozen Mel-PAKD student on 31 array recordings from 5–100 m drone scenes and indoor/outdoor non-drone scenes. Table 12 reports edge-device deployment results for the same lightweight student.
 
-## 下载模型权重
+## Downloading model checkpoints
 
-模型权重由 Git LFS 管理。克隆仓库后可执行：
+The model checkpoints are managed with Git LFS. After cloning the repository, run:
 
 ```bash
 git lfs install
 git lfs pull
 ```
 
-## 后续公开计划与长期维护承诺
+## Planned releases and long-term maintenance
 
-本仓库将作为论文的长期公开存档持续维护。作者承诺永久保留本仓库及已发布版本，不会在论文发表后删除仓库、撤下送审材料或覆盖已经发布的版本；后续更新将通过新的提交、版本标签和 Release 追加，`v1.0-review-materials` 将继续保留。
+This repository will be maintained as the long-term public archive for the paper. The authors commit to retaining the repository and all published versions permanently. The repository, review materials, and released versions will not be removed after publication. Future updates will be added through new commits, version tags, and Releases, while `v1.0-review-materials` will remain available for traceability.
 
-- 论文正式发表后三日内，上传与最终论文对应的数据预处理、教师与学生模型、PAKD训练、评价、三分类扩展、八麦克风阵列处理及部署相关代码；
-- 论文正式发表后一周内，上传自采二分类、三分类数据集和5–100 m八麦克风阵列现场录音，并在本仓库提供稳定的下载链接与数据说明；
-- 代码、数据和文档更新完成后，将发布新的版本标签，同时保留当前送审版本以便追溯。
+- Within three days after formal publication, we will upload the data-preprocessing, teacher- and student-model, PAKD-training, evaluation, three-class-extension, eight-microphone-array processing, and deployment code corresponding to the final paper.
+- Within one week after formal publication, we will release the self-collected binary and three-class datasets and the 5–100 m eight-microphone-array field recordings, together with stable download links and data documentation in this repository.
+- After the code, data, and documentation have been added, a new version tag will be issued while the current review-materials version remains available.
 
-本仓库中的模型、结果记录和实验映射共同构成当前论文实验的公开核查材料。论文正式发表后，仓库将进一步扩展为包含代码、数据访问和使用说明的完整项目页面。
+The checkpoints, result records, and experiment mapping in this repository constitute the public verification materials for the current manuscript. After formal publication, the repository will be expanded into a complete project page containing the code, data-access information, and usage documentation.
