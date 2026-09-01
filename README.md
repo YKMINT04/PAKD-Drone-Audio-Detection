@@ -1,27 +1,25 @@
 # PAKD：面向无人机声学检测的偏好对齐知识蒸馏
 
-本仓库是 PAKD（Preference-Aligned Knowledge Distillation）无人机声学检测研究的配套公开仓库，用于提供与当前论文稿件相对应的模型权重、实验结果记录及文件完整性信息。当前送审材料已通过 `v1.0-review-materials` 标签固化，便于审稿人与读者按照论文 Table I–XI 核查主要实验。
+本仓库是 PAKD（Preference-Aligned Knowledge Distillation）无人机声学检测研究的配套公开仓库，用于提供与当前论文稿件相对应的模型权重和实验结果记录。当前送审材料已通过 `v1.0-review-materials` 标签固化，便于审稿人与读者按照论文 Table I–XII 核查主要实验。
 
 ## 当前公开内容
 
 - 53 个与论文实验对应的模型检查点，统一存放于 `checkpoints/`，并通过 Git LFS 管理；
-- 11 个与论文 Table I–XI 一一对应的结果记录，统一存放于 `results/`；
-- 检查点—实验—论文表格映射、结果文件映射和 SHA-256 完整性校验信息；
-- 覆盖二分类教师模型、轻量学生模型、同域测试、DADS 跨数据集测试、知识蒸馏方法比较、PAKD 组件消融、重复实验、三分类扩展和边缘部署实验。
+- 12 个与论文 Table I–XII 一一对应的结果记录，统一存放于 `results/`；
+- 检查点—实验—论文表格映射及结果文件映射；
+- 覆盖二分类教师模型、轻量学生模型、同域测试、DADS 跨数据集测试、知识蒸馏方法比较、PAKD 组件消融、重复实验、三分类扩展、八麦克风阵列现场实验和边缘部署实验。
 
 ## 仓库目录
 
 - `checkpoints/`：论文所报告实验对应的模型检查点；
-- `results/`：Table I–XI 的数值结果记录；
-- `docs/checkpoint_inventory.csv`：检查点编号、文件名、大小和 SHA-256 清单；
+- `results/`：Table I–XII 的数值结果记录；
+- `docs/checkpoint_inventory.csv`：检查点编号、文件名和文件大小清单；
 - `docs/checkpoint_experiment_mapping.txt`：每个检查点对应的论文表格与实验说明；
 - `docs/result_mapping.csv`：论文表格与 `results/` 中结果文件的对应关系；
-- `MANIFEST.csv`：仓库文件清单及其完整性信息；
-- `SHA256SUMS.txt`：用于独立校验文件内容的 SHA-256 摘要。
 
 ## 论文实验与模型检查点
 
-检查点使用 `C001`–`C053` 的中性编号。完整文件名和 SHA-256 值见 `docs/checkpoint_experiment_mapping.txt` 与 `docs/checkpoint_inventory.csv`。
+检查点使用 `C001`–`C053` 的中性编号。完整文件名及其对应实验见 `docs/checkpoint_experiment_mapping.txt` 与 `docs/checkpoint_inventory.csv`。
 
 | 论文位置 | 实验内容 | 对应检查点 | 结果文件 |
 | --- | --- | --- | --- |
@@ -35,7 +33,8 @@
 | Table VIII | PAKD 组件消融：CE/KL、成对偏好、置信度、分支一致性和特征蒸馏 | `C027`, `C034`, `C038`–`C041` | `results/TableVIII_pakd_component_ablation.txt` |
 | Table IX | AT、任务损失学生与 PAKD 学生的多次跨数据集实验 | `C014`–`C019`, `C024`, `C027`, `C032` | `results/TableIX_repeated_experiments.txt` |
 | Table X | 三分类扩展：任务损失、AT、Hinton KD、NormKD、TRKD-inspired、DKD、RKD、PAKD 及三分类 TripleFusion 教师 | `C042`–`C049`, `C053` | `results/TableX_three_class_results.txt` |
-| Table XI | 所选轻量 Mel-PAKD 学生的边缘设备部署记录 | `C027` | `results/TableXI_edge_deployment_records.txt` |
+| Table XI | 冻结 Mel-PAKD 学生接入八麦克风阵列后的现场识别结果 | `C027` | `results/TableXI_array_assisted_field_recognition.txt` |
+| Table XII | 所选轻量 Mel-PAKD 学生的边缘设备部署记录 | `C027` | `results/TableXII_edge_deployment_records.txt` |
 
 除表格实验外，`C050`–`C052` 分别对应 LFCC-primary、Mel-primary 和所选 MFCC-primary TripleFusion 二分类教师，用于论文正文中的教师模型比较及 DADS 外部评价。部分模型在训练完成后被用于多个分析，因此同一检查点可同时对应多张论文表格；这种复用关系已在映射文件中明确记录。
 
@@ -57,23 +56,17 @@ Tables V 和 VI 共同覆盖 LFCC、Mel、MFCC 三类学生及 LFCC-primary、Me
 
 Table VII 收录任务损失学生、经典蒸馏方法、近期代表性蒸馏方法和 PAKD 的对比检查点。Table VIII 进一步对应 PAKD 的成对偏好、置信度加权、分支一致性和特征蒸馏等组成部分，用于核查完整方法及各消融变体。
 
-### 5. 重复实验、三分类与部署
+### 5. 重复实验、三分类、阵列拓展与部署
 
-Table IX 汇总 AT、任务损失学生和 PAKD 学生的多次实验。Table X 将教师—学生蒸馏扩展到三分类任务，并提供所列各方法和三分类教师的检查点。Table XI 对应最终选定的轻量 Mel-PAKD 学生，并记录其边缘部署结果。
+Table IX 汇总 AT、任务损失学生和 PAKD 学生的多次实验。Table X 将教师—学生蒸馏扩展到三分类任务，并提供所列各方法和三分类教师的检查点。Table XI 记录冻结 Mel-PAKD 学生接入八麦克风阵列后的现场识别结果，Table XII 记录同一轻量学生的边缘部署结果。
 
-## 下载与完整性校验
+## 下载模型权重
 
 模型权重由 Git LFS 管理。克隆仓库后可执行：
 
 ```bash
 git lfs install
 git lfs pull
-```
-
-下载完成后，可根据 `SHA256SUMS.txt` 或 `docs/checkpoint_inventory.csv` 核验文件完整性。例如在 PowerShell 中：
-
-```powershell
-Get-FileHash .\checkpoints\checkpoint_001.pth -Algorithm SHA256
 ```
 
 ## 后续公开计划与长期维护承诺
@@ -84,4 +77,4 @@ Get-FileHash .\checkpoints\checkpoint_001.pth -Algorithm SHA256
 - 论文正式发表后一周内，上传自采二分类和三分类数据集，并在本仓库提供稳定的下载链接与数据说明；
 - 代码、数据和文档更新完成后，将发布新的版本标签，同时保留当前送审版本以便追溯。
 
-本仓库中的模型、结果记录和完整性清单共同构成当前论文实验的公开核查材料。论文正式发表后，仓库将进一步扩展为包含代码、数据访问和使用说明的完整项目页面。
+本仓库中的模型、结果记录和实验映射共同构成当前论文实验的公开核查材料。论文正式发表后，仓库将进一步扩展为包含代码、数据访问和使用说明的完整项目页面。

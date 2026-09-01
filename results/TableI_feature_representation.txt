@@ -13,5 +13,5 @@ Inter-class Dist	19.0528	33.1675	+74.08%
 Sep/Compact Ratio	0.9464	2.3733	+150.78%
 
 Checkpoint references:
-- checkpoints/checkpoint_004.pth	SHA-256=25213269E0C275B8E9FC3C0F8091DCA46322AC57710395BC23F04D98D8463E3F
-- checkpoints/checkpoint_052.pth	SHA-256=DD2F28F2D93D8C7CFCFB2672DD3CCBE56EC900A9F65F165E731E767193F9E7A5
+- checkpoints/checkpoint_004.pth
+- checkpoints/checkpoint_052.pth

@@ -1,0 +1,32 @@
+PAKD manuscript — current version — Table XI
+Record type: derived manuscript-aligned result record
+This file is a concise result record, not a raw console or training log.
+
+Table XI. Array-assisted field recognition using the frozen PAKD student.
+
+Evaluation unit:
+- The reported field evaluation contains 31 original WAV recordings.
+- Each WAV is divided into non-overlapping 10-s clips; a final segment shorter than 10 s is retained as one clip.
+- The Mel-PAKD student checkpoint remains frozen throughout the array experiment.
+
+Tabulated results:
+Distance / scene	Original recordings	10-s clips	V6 correct-class time ratio (%)	V6 correct 10-s clips
+5 m	4	4	87.50±25.00	4/4
+25 m	6	6	98.75±3.06	6/6
+50 m	9	27	100.00±0.00	27/27
+75 m	5	30	98.67±1.92	30/30
+100 m	5	52	85.26±13.16	51/52
+Indoor non-drone	1	10	97.50	10/10
+Outdoor non-drone	1	30	88.17	22/30
+
+Aggregate records:
+- 5–100 m drone recordings: 118/119 correct 10-s clips (99.16%).
+- Indoor and outdoor non-drone recordings: 32/40 correct 10-s clips (80.00%).
+
+Checkpoint reference:
+- checkpoints/checkpoint_027.pth
+
+Evidence note:
+- For distance rows, correct-class time ratio denotes the drone-time ratio; for non-drone rows, it denotes the Non-drone-time ratio.
+- Percentages are means±sample standard deviations across the original WAV recordings, matching the manuscript table.
+- The 10-s clip counts were derived from the final V6 result archive retained by the authors.
