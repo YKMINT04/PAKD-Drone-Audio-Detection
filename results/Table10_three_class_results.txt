@@ -1,0 +1,29 @@
+PAKD manuscript — current version — Table 10
+Record type: derived manuscript-aligned result record
+This file is a concise result record, not a raw console or training log.
+
+Table 10. Three-class classification results on the self-collected test set.
+
+Tabulated results:
+Model / Method	Drone class 1	Drone class 1	Drone class 1	Drone class 2	Drone class 2	Drone class 2	Non-drone	Non-drone	Non-drone
+Model / Method	P	R	F1	P	R	F1	P	R	F1
+MFCC teacher	0.9770	0.8813	0.9267	0.9989	0.9807	0.9897	0.9902	0.9985	0.9944
+Mel task-loss baseline	0.9506	0.9548	0.9527	0.9924	0.9861	0.9892	0.9961	0.9960	0.9961
+PAKD (MFCC-primary teacher)	0.9486	0.9742	0.9613	0.9936	0.9925	0.9930	0.9977	0.9957	0.9967
+AT (MFCC-primary teacher)	0.9813	0.9215	0.9504	0.9956	0.9786	0.9870	0.9931	0.9985	0.9958
+DKD (MFCC-primary teacher)	0.9549	0.9573	0.9561	0.9978	0.9893	0.9935	0.9963	0.9965	0.9964
+Hinton KD (MFCC-primary teacher)	0.9642	0.9466	0.9553	0.9989	0.9753	0.9870	0.9949	0.9973	0.9961
+NormKD-style (MFCC-primary teacher)	0.9370	0.9724	0.9544	0.9968	0.9904	0.9935	0.9975	0.9949	0.9962
+RKD (MFCC-primary teacher)	0.9705	0.9497	0.9600	0.9989	0.9807	0.9897	0.9954	0.9978	0.9966
+TRKD-inspired (MFCC-primary teacher)	0.9436	0.9661	0.9547	0.9978	0.9850	0.9914	0.9968	0.9955	0.9961
+
+Checkpoint references:
+- checkpoints/checkpoint_042.pth
+- checkpoints/checkpoint_043.pth
+- checkpoints/checkpoint_044.pth
+- checkpoints/checkpoint_045.pth
+- checkpoints/checkpoint_046.pth
+- checkpoints/checkpoint_047.pth
+- checkpoints/checkpoint_048.pth
+- checkpoints/checkpoint_049.pth
+- checkpoints/checkpoint_053.pth

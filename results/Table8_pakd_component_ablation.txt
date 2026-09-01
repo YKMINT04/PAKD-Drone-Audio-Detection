@@ -1,11 +1,11 @@
-PAKD manuscript — current version — Table VIII
+PAKD manuscript — current version — Table 8
 Record type: derived manuscript-aligned result record
 This file is a concise result record, not a raw console or training log.
 
-Table VIII. Component ablation of PAKD on the DADS benchmark.
+Table 8. Component ablation of PAKD on the full DADS archive.
 
 Tabulated results:
-Variant	CE	KL	Pairwise	Confidence	Consistency	Feature KD	AUC	Non-drone | Recall	False Alarm | Rate
+Variant	CE	KL	Pairwise	Confidence	Consistency	Feature KD	AUC	Non-drone Recall	False Alarm Rate
 CE only	√						0.7392	0.6782	0.3217
 KL KD	√	√					0.8387	0.7923	0.2077
 Pairwise only	√		√				0.8010	0.6914	0.3086

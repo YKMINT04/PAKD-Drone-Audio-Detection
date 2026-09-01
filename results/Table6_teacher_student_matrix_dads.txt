@@ -1,8 +1,8 @@
-PAKD manuscript — current version — Table VI
+PAKD manuscript — current version — Table 6
 Record type: derived manuscript-aligned result record
 This file is a concise result record, not a raw console or training log.
 
-Table VI. Class-wise cross-dataset performance of the teacher–student matrix on DADS.
+Table 6. Class-wise cross-dataset performance of the teacher–student matrix on DADS.
 
 Tabulated results:
 Features	Drone	Drone	Drone	Non-drone	Non-drone	Non-drone

@@ -1,8 +1,8 @@
-PAKD manuscript — current version — Table V
+PAKD manuscript — current version — Table 5
 Record type: derived manuscript-aligned result record
 This file is a concise result record, not a raw console or training log.
 
-Table V. In-domain distillation results on the self-collected held-out test set.
+Table 5. In-domain distillation results on the self-collected held-out test set.
 
 Tabulated results:
 Features	Drone	Drone	Drone	Non-drone	Non-drone	Non-drone

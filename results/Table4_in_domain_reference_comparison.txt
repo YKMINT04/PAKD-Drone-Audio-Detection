@@ -1,8 +1,8 @@
-PAKD manuscript — current version — Table IV
+PAKD manuscript — current version — Table 4
 Record type: derived manuscript-aligned result record
 This file is a concise result record, not a raw console or training log.
 
-Table IV. Reference comparison on the self-collected test set under different pretraining domains.
+Table 4. Reference comparison on the self-collected test set under different pretraining domains.
 
 Tabulated results:
 Features	Drone	Drone	Drone	Non-drone	Non-drone	Non-drone	Model scale	Pretraining
@@ -24,3 +24,4 @@ Checkpoint references:
 - checkpoints/checkpoint_011.pth
 - checkpoints/checkpoint_012.pth
 - checkpoints/checkpoint_013.pth
+- checkpoints/checkpoint_052.pth

@@ -1,8 +1,8 @@
-PAKD manuscript — current version — Table VII
+PAKD manuscript — current version — Table 7
 Record type: derived manuscript-aligned result record
 This file is a concise result record, not a raw console or training log.
 
-Table VII. Cross-dataset comparison of distillation strategies using an MFCC-primary teacher and a Mel student on the disjoint 90% DADS test subsets (fixed training run; mean of five calibration/test splits).
+Table 7. Cross-dataset comparison of distillation strategies using an MFCC-primary teacher and a Mel student on the disjoint 90% DADS test subsets (training seed 42; mean of five calibration/test splits).
 
 Tabulated results:
 Model / Method	Drone	Drone	Drone	Non-drone	Non-drone	Non-drone	AUC

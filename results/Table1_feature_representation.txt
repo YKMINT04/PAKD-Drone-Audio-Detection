@@ -1,8 +1,8 @@
-PAKD manuscript — current version — Table I
+PAKD manuscript — current version — Table 1
 Record type: derived manuscript-aligned result record
 This file is a concise result record, not a raw console or training log.
 
-Table I. Quantitative evaluation of feature representation quality for the proposed TripleFusion teacher.
+Table 1. Quantitative evaluation of feature representation quality for the proposed TripleFusion teacher.
 
 Tabulated results:
 Metric (direction)	MFCC-only	Post-Fusion	Relative change

@@ -1,8 +1,8 @@
-PAKD manuscript — current version — Table II
+PAKD manuscript — current version — Table 2
 Record type: derived manuscript-aligned result record
 This file is a concise result record, not a raw console or training log.
 
-Table II. Single-seed in-domain comparison of attention variants on the self-collected test set.
+Table 2. Single-seed in-domain comparison of attention variants on the self-collected test set.
 
 Tabulated results:
 Model	Module	Parallel temporal filtering	Cross-branch aggregation	AUC	Drone P	Drone R	Drone F1	Non-drone P	Non-drone R	Non-drone F1

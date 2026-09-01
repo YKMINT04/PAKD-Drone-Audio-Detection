@@ -1,8 +1,8 @@
-PAKD manuscript — current version — Table XII
+PAKD manuscript — current version — Table 12
 Record type: derived manuscript-aligned result record
 This file is a concise result record, not a raw console or training log.
 
-Table XII. Edge-deployment records.
+Table 12. Edge-deployment records.
 
 Tabulated results:
 Platform	Runtime	Quantitative record	Scope

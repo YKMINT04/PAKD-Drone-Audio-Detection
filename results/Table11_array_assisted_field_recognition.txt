@@ -1,8 +1,8 @@
-PAKD manuscript — current version — Table XI
+PAKD manuscript — current version — Table 11
 Record type: derived manuscript-aligned result record
 This file is a concise result record, not a raw console or training log.
 
-Table XI. Array-assisted field recognition using the frozen PAKD student.
+Table 11. Array-assisted field recognition using the frozen PAKD student.
 
 Evaluation unit:
 - The reported field evaluation contains 31 original WAV recordings.

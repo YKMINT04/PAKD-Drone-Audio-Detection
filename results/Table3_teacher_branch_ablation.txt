@@ -1,19 +1,19 @@
-PAKD manuscript — current version — Table III
+PAKD manuscript — current version — Table 3
 Record type: derived manuscript-aligned result record
 This file is a concise result record, not a raw console or training log.
 
-Table III. Teacher branch ablation on the self-collected test set.
+Table 3. Teacher branch ablation on the self-collected test set.
 
 Tabulated results:
 Configuration	Drone	Drone	Drone	Non-drone	Non-drone	Non-drone
-Features	P	R	F1	P	R	F1
-MFCC	0.8708	0.8725	0.8717	0.9902	0.9901	0.9901
-MFCC+LFCC	0.9217	0.8725	0.8964	0.9902	0.9943	0.9923
+Feature set	P	R	F1	P	R	F1
+MFCC-only	0.8708	0.8725	0.8717	0.9902	0.9901	0.9901
+MFCC + LFCC	0.9217	0.8725	0.8964	0.9902	0.9943	0.9923
 MFCC + Mel	0.9452	0.9108	0.9277	0.9932	0.9959	0.9946
-MFCC为主三分支	0.9540	0.9127	0.9329	0.9933	0.9966	0.9950
+TripleFusion (MFCC-primary)	0.9540	0.9127	0.9329	0.9933	0.9966	0.9950
 
 Checkpoint references:
+- checkpoints/checkpoint_004.pth
 - checkpoints/checkpoint_005.pth
 - checkpoints/checkpoint_006.pth
-- checkpoints/checkpoint_004.pth
 - checkpoints/checkpoint_052.pth
