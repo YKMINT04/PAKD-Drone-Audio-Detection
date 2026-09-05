@@ -25,8 +25,8 @@ C014	checkpoints/checkpoint_014.pth	Table 9	AT repeated experiment, Run A
 C015	checkpoints/checkpoint_015.pth	Table 9	AT repeated experiment, Run B
 C016	checkpoints/checkpoint_016.pth	Table 9	Task-loss baseline repeated experiment, Run A
 C017	checkpoints/checkpoint_017.pth	Table 9	Task-loss baseline repeated experiment, Run B
-C018	checkpoints/checkpoint_018.pth	Table 9	PAKD repeated experiment, Run A
-C019	checkpoints/checkpoint_019.pth	Table 9	PAKD repeated experiment, Run B
+C018	checkpoints/checkpoint_018.pth	Table 9	MFCC-primary teacher to Mel-student PAKD repeated experiment, Run A
+C019	checkpoints/checkpoint_019.pth	Table 9	MFCC-primary teacher to Mel-student PAKD repeated experiment, Run B
 C020	checkpoints/checkpoint_020.pth	Tables 5 and 6	LFCC student trained with task loss only
 C021	checkpoints/checkpoint_021.pth	Tables 5 and 6	LFCC student distilled by an LFCC-primary teacher using PAKD
 C022	checkpoints/checkpoint_022.pth	Tables 5 and 6	LFCC student distilled by a Mel-primary teacher using PAKD

@@ -58,7 +58,7 @@ Table 7 contains checkpoints for the task-loss student, classical distillation m
 
 ### 5. Repeated experiments, three-class extension, array extension, and deployment
 
-Table 9 summarizes repeated experiments for AT, the task-loss student, and the PAKD student. Table 10 extends teacher–student distillation to the three-class task and provides checkpoints for the listed methods and the three-class teacher. Table 11 reports 10-s-clip recognition results obtained by the frozen Mel-PAKD student on 31 array recordings from 5–100 m drone scenes and indoor/outdoor non-drone scenes. Table 12 reports edge-device deployment results for the same lightweight student.
+Table 9 summarizes repeated experiments for AT, the task-loss student, and the PAKD student; all three PAKD runs use the MFCC-primary TripleFusion teacher and the Mel student. Table 10 extends teacher–student distillation to the three-class task and provides checkpoints for the listed methods and the three-class teacher. Table 11 reports 10-s-clip recognition results obtained by the frozen Mel-PAKD student on 31 array recordings from 5–100 m drone scenes and indoor/outdoor non-drone scenes. Table 12 reports edge-device deployment results for the same lightweight student.
 
 ## Downloading model checkpoints
 
