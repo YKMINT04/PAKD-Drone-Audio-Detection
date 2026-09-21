@@ -1,32 +1,35 @@
-PAKD manuscript — current version — Table 11
-Record type: derived manuscript-aligned result record
-This file is a concise result record, not a raw console or training log.
+CWPKD manuscript v10.21 — Table 11
+Derived result record, not a training console log.
 
-Table 11. Array-assisted field recognition using the frozen PAKD student.
+Table 11. Independent 2-s clip classification in the array development evaluation.
+33 original recordings; 640 drone and 200 non-drone clips; all short tails retained.
+Frozen student C027 plus a field-label-trained RBF device head.
+The beamforming frontend is applied to complete recordings before splitting.
+Each split waveform is then inferred independently without cross-clip classifier history.
 
-Evaluation unit:
-- The reported field evaluation contains 31 original WAV recordings.
-- Each WAV is divided into non-overlapping 10-s clips; a final segment shorter than 10 s is retained as one clip.
-- The Mel-PAKD student checkpoint remains frozen throughout the array experiment.
+Distance / scene	2-s clips	Correct 2-s clips	Accuracy (%)
+5 m	20	20/20	100.00
+25 m	30	30/30	100.00
+50 m	135	135/135	100.00
+75 m	150	150/150	100.00
+100 m	259	258/259	99.61
+120 m	46	43/46	93.48
+Indoor non-drone	50	46/50	92.00
+Outdoor non-drone	150	149/150	99.33
 
-Tabulated results:
-Distance / scene	Original recordings	10-s clips	V6 correct-class time ratio (%)	V6 correct 10-s clips
-5 m	4	4	87.50±25.00	4/4
-25 m	6	6	98.75±3.06	6/6
-50 m	9	27	100.00±0.00	27/27
-75 m	5	30	98.67±1.92	30/30
-100 m	5	52	85.26±13.16	51/52
-Indoor non-drone	1	10	97.50	10/10
-Outdoor non-drone	1	30	88.17	22/30
+Protocol:
+- Positive data: leave one complete original recording out.
+- Negative data: hold out 50-s blocks and exclude adjacent 10-s intervals.
+- Standardization and head fitting use training data in each fold only.
+- Head/kernel/pooling choices were selected using this development evaluation; this is not an independent confirmation set.
+- Both 120-m recordings are included: 21/23 and 22/23.
+- Whole-recording background holdout: indoor 2/50 (4.00%), outdoor 0/150 (0.00%).
+- Full-data refit gives 840/840 on the fitting data; this is not the table's evaluation score.
+- Total grouped-development result: 831/840; drone 636/640; non-drone 195/200.
+- These figures are clip classification accuracies, not the old correct-class time ratios.
 
-Aggregate records:
-- 5–100 m drone recordings: 118/119 correct 10-s clips (99.16%).
-- Indoor and outdoor non-drone recordings: 32/40 correct 10-s clips (80.00%).
-
-Checkpoint reference:
-- checkpoints/checkpoint_027.pth
-
-Evidence note:
-- For distance rows, correct-class time ratio denotes the drone-time ratio; for non-drone rows, it denotes the Non-drone-time ratio.
-- Percentages are means±sample standard deviations across the original WAV recordings, matching the manuscript table.
-- The 10-s clip counts were derived from the final V6 result archive retained by the authors.
+Student checkpoint: checkpoints/checkpoint_027.pth
+New full-data device head: checkpoints/array_v8_device_head.json
+Evidence, fold memberships and strict failure results: results/array_v8_2s/
+Old 10-s V6 record is retained under results/history/.
+This 2-s system has not been validated in live end-to-end acquisition or the old 300-hour edge run.

@@ -2,11 +2,12 @@
 
 [English](README.md) | **简体中文**
 
-本仓库是 PAKD（Preference-Aligned Knowledge Distillation）无人机声学检测研究的配套公开仓库，用于提供与当前论文稿件相对应的模型权重和实验结果记录。当前送审材料已通过 `v1.0-review-materials` 标签固化，便于审稿人与读者按照论文 Tables 1–12 核查主要实验。
+本仓库是 PAKD（Preference-Aligned Knowledge Distillation）无人机声学检测研究的配套公开仓库，用于提供模型权重和实验结果记录。`v1.0-review-materials` 版本包含下文所述的论文v10.21阵列修订材料。
 
 ## 当前公开内容
 
 - 53 个与论文实验对应的模型检查点，统一存放于 `checkpoints/`，并通过 Git LFS 管理；
+- 现场监督训练的阵列设备分类头：`checkpoints/array_v8_device_head.json`；
 - 12 个与论文 Tables 1–12 一一对应的结果记录，统一存放于 `results/`；
 - 检查点—实验—论文表格映射；
 - 覆盖二分类教师模型、轻量学生模型、同域测试、DADS 跨数据集测试、知识蒸馏方法比较、PAKD 组件消融、重复实验、三分类扩展、八麦克风阵列现场实验和边缘部署实验。
@@ -33,7 +34,7 @@
 | Table 8 | PAKD 组件消融：CE/KL、成对偏好、置信度、分支一致性和特征蒸馏 | `C027`, `C034`, `C038`–`C041` | `results/Table8_pakd_component_ablation.txt` |
 | Table 9 | AT、任务损失学生与 PAKD 学生的多次跨数据集实验 | `C014`–`C019`, `C024`, `C027`, `C032` | `results/Table9_repeated_experiments.txt` |
 | Table 10 | 三分类扩展：任务损失、AT、Hinton KD、NormKD、TRKD-inspired、DKD、RKD、PAKD 及三分类 TripleFusion 教师 | `C042`–`C049`, `C053` | `results/Table10_three_class_results.txt` |
-| Table 11 | 冻结Mel-PAKD学生在31组5–100 m无人机及室内/室外背景阵列录音上的10 s片段识别结果 | `C027` | `results/Table11_array_assisted_field_recognition.txt` |
+| Table 11 | 33组5–120 m及背景录音的2 s片段开发复评；冻结CWPKD学生加现场监督RBF设备分类头 | C027 + array_v8_device_head.json | results/Table11_array_assisted_field_recognition.txt |
 | Table 12 | 所选轻量 Mel-PAKD 学生的边缘设备部署记录 | `C027` | `results/Table12_edge_deployment_records.txt` |
 
 除表格实验外，`C050`–`C052` 分别对应 LFCC-primary、Mel-primary 和所选 MFCC-primary TripleFusion 二分类教师，用于论文正文中的教师模型比较及 DADS 外部评价。部分模型在训练完成后被用于多个分析，因此同一检查点可同时对应多张论文表格；这种复用关系已在映射文件中明确记录。
@@ -58,7 +59,7 @@ Table 7 收录任务损失学生、经典蒸馏方法、近期代表性蒸馏方
 
 ### 5. 重复实验、三分类、阵列拓展与部署
 
-Table 9 汇总 AT、任务损失学生和 PAKD 学生的多次实验；其中三次 PAKD 运行均采用 MFCC-primary TripleFusion 教师和 Mel 学生。Table 10 将教师—学生蒸馏扩展到三分类任务，并提供所列各方法和三分类教师的检查点。Table 11 记录冻结 Mel-PAKD 学生在 31 组 5–100 m 无人机及室内/室外背景阵列录音上的 10 s 片段识别结果，Table 12 记录同一轻量学生的边缘部署结果。
+Table 9 汇总 AT、任务损失学生和 PAKD 学生的多次实验；其中三次 PAKD 运行均采用 MFCC-primary TripleFusion 教师和 Mel 学生。Table 10 将教师—学生蒸馏扩展到三分类任务，并提供所列各方法和三分类教师的检查点。Table 11现为33组录音的2 s片段开发复评，包含120 m，新增设备分类头；Table 12仍是原学生网络的边缘部署记录，并非新组合的端到端验证。
 
 ## 下载模型权重
 
@@ -71,10 +72,14 @@ git lfs pull
 
 ## 后续公开计划与长期维护承诺
 
-本仓库将作为论文的长期公开存档持续维护。作者承诺永久保留本仓库及已发布版本，不会在论文发表后删除仓库、撤下送审材料或覆盖已经发布的版本；后续更新将通过新的提交、版本标签和 Release 追加，`v1.0-review-materials` 将继续保留。
+本仓库将作为论文的长期公开存档持续维护，作者承诺永久保留仓库及公开历史，不在论文发表后删除。送审前整理阶段，v1.0标签更新至最新送审材料快照，旧快照通过提交历史保留；正式送审后，后续修订使用独立版本标签。
 
 - 论文正式发表后三日内，上传与最终论文对应的数据预处理、教师与学生模型、PAKD训练、评价、三分类扩展、八麦克风阵列处理及部署相关代码；
-- 论文正式发表后一周内，上传自采二分类、三分类数据集和5–100 m八麦克风阵列现场录音，并在本仓库提供稳定的下载链接与数据说明；
+- 论文正式发表后一周内，上传自采二分类、三分类数据集和5–120 m八麦克风阵列现场录音，并在本仓库提供稳定的下载链接与数据说明；
 - 代码、数据和文档更新完成后，将发布新的版本标签，同时保留当前送审版本以便追溯。
 
 本仓库中的模型、结果记录和实验映射共同构成当前论文实验的公开核查材料。论文正式发表后，仓库将进一步扩展为包含代码、数据访问和使用说明的完整项目页面。
+
+## v10.21阵列更新
+
+代码中的PAKD、TripleFusion和MTFA为历史名称；当前稿件使用CWPKD、PriXFuse和MelTriGate/TriTGate。此次只更新阵列结果，不重新核定其他表。评价覆盖33组录音，包含120 m两组，切分为840条不重叠且不超过2 s的片段。本送审包提供结果记录和设备分类头，录音及实现代码仍按上述计划发布。学生C027保持不变，新增现场标签训练的设备分类头。表11各场景开发复评均超过或达到90%；整条背景留出时室内4%、室外0%，结果不代表未见背景泛化。旧10 s记录保留在results/history，逐条证据位于results/array_v8_2s。新系统未做实时端到端或300 h验证。

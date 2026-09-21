@@ -2,11 +2,12 @@
 
 **English** | [简体中文](README_zh-CN.md)
 
-This repository accompanies our study on Preference-Aligned Knowledge Distillation (PAKD) for drone acoustic detection. It provides model checkpoints and experimental result records corresponding to the current manuscript. The review materials are preserved under the `v1.0-review-materials` tag so that reviewers and readers can verify the principal experiments reported in Tables 1–12.
+This repository accompanies our study on Preference-Aligned Knowledge Distillation (PAKD) for drone acoustic detection. It provides model checkpoints and experimental result records. Version `v1.0-review-materials` includes the array revision for manuscript v10.21 described below.
 
 ## Currently available materials
 
 - 53 model checkpoints corresponding to experiments reported in the manuscript, stored in `checkpoints/` and managed with Git LFS;
+- the supervised array-device classification head, stored as `checkpoints/array_v8_device_head.json`;
 - 12 result records corresponding one-to-one with Tables 1–12, stored in `results/`;
 - a checkpoint-to-experiment-to-table mapping;
 - coverage of binary teacher models, lightweight student models, in-domain evaluation, cross-dataset evaluation on DADS, comparisons of knowledge-distillation methods, PAKD component ablations, repeated experiments, the three-class extension, eight-microphone-array field experiments, and edge deployment.
@@ -33,7 +34,7 @@ The checkpoints use neutral identifiers `C001`–`C053`. Their complete filename
 | Table 8 | PAKD component ablation: CE/KL, pairwise preference, confidence, branch consistency, and feature distillation | `C027`, `C034`, `C038`–`C041` | `results/Table8_pakd_component_ablation.txt` |
 | Table 9 | Repeated cross-dataset experiments for AT, the task-loss student, and the PAKD student | `C014`–`C019`, `C024`, `C027`, `C032` | `results/Table9_repeated_experiments.txt` |
 | Table 10 | Three-class extension: task loss, AT, Hinton KD, NormKD, TRKD-inspired, DKD, RKD, PAKD, and the three-class TripleFusion teacher | `C042`–`C049`, `C053` | `results/Table10_three_class_results.txt` |
-| Table 11 | Recognition results of the frozen Mel-PAKD student on 31 array recordings collected at 5–100 m and in indoor/outdoor non-drone scenes, evaluated using 10-s clips | `C027` | `results/Table11_array_assisted_field_recognition.txt` |
+| Table 11 | 2-s development evaluation of 33 recordings at 5–120 m and two background scenes; frozen CWPKD student plus supervised RBF device head | C027 + array_v8_device_head.json | results/Table11_array_assisted_field_recognition.txt |
 | Table 12 | Edge-device deployment records for the selected lightweight Mel-PAKD student | `C027` | `results/Table12_edge_deployment_records.txt` |
 
 In addition to the tabulated experiments, `C050`–`C052` correspond respectively to the LFCC-primary, Mel-primary, and selected MFCC-primary TripleFusion binary teachers used in the teacher-model comparison and external DADS evaluation described in the manuscript. A trained model may support more than one analysis; these reuse relationships are explicitly recorded in the mapping file.
@@ -58,7 +59,7 @@ Table 7 contains checkpoints for the task-loss student, classical distillation m
 
 ### 5. Repeated experiments, three-class extension, array extension, and deployment
 
-Table 9 summarizes repeated experiments for AT, the task-loss student, and the PAKD student; all three PAKD runs use the MFCC-primary TripleFusion teacher and the Mel student. Table 10 extends teacher–student distillation to the three-class task and provides checkpoints for the listed methods and the three-class teacher. Table 11 reports 10-s-clip recognition results obtained by the frozen Mel-PAKD student on 31 array recordings from 5–100 m drone scenes and indoor/outdoor non-drone scenes. Table 12 reports edge-device deployment results for the same lightweight student.
+Table 9 summarizes repeated experiments for AT, the task-loss student, and the PAKD student; all three PAKD runs use the MFCC-primary TripleFusion teacher and the Mel student. Table 10 extends teacher–student distillation to the three-class task and provides checkpoints for the listed methods and the three-class teacher. Table 11 now reports 2-s development evaluation of 33 recordings including 120 m with a supervised device head. Table 12 remains the original student edge benchmark, not validation of the new complete pipeline.
 
 ## Downloading model checkpoints
 
@@ -71,10 +72,14 @@ git lfs pull
 
 ## Planned releases and long-term maintenance
 
-This repository will be maintained as the long-term public archive for the paper. The authors commit to retaining the repository and all published versions permanently. The repository, review materials, and released versions will not be removed after publication. Future updates will be added through new commits, version tags, and Releases, while `v1.0-review-materials` will remain available for traceability.
+This repository will be maintained as the long-term public archive for the paper. The authors commit to retaining the repository and its published history permanently, including after publication. During pre-submission preparation, the v1.0 review-materials tag is updated to the latest review snapshot; earlier snapshots remain accessible through commit history. After submission, subsequent revisions will use separate version tags.
 
 - Within three days after formal publication, we will upload the data-preprocessing, teacher- and student-model, PAKD-training, evaluation, three-class-extension, eight-microphone-array processing, and deployment code corresponding to the final paper.
-- Within one week after formal publication, we will release the self-collected binary and three-class datasets and the 5–100 m eight-microphone-array field recordings, together with stable download links and data documentation in this repository.
+- Within one week after formal publication, we will release the self-collected binary and three-class datasets and the 5–120 m eight-microphone-array field recordings, together with stable download links and data documentation in this repository.
 - After the code, data, and documentation have been added, a new version tag will be issued while the current review-materials version remains available.
 
 The checkpoints, result records, and experiment mapping in this repository constitute the public verification materials for the current manuscript. After formal publication, the repository will be expanded into a complete project page containing the code, data-access information, and usage documentation.
+
+## Array revision for manuscript v10.21
+
+PAKD, TripleFusion and MTFA are historical code names; the manuscript now uses CWPKD, PriXFuse and MelTriGate/TriTGate. Only the array evaluation is revised here; other tables were not re-audited in this update. The evaluation covers 33 recordings, including two at 120 m, split into 840 non-overlapping clips of up to 2 s. This review package provides result records and the device head, not the audio or implementation code; their release schedule is given above. Student C027 is unchanged; the added device head is trained with field labels. Every scene reaches at least 90% in grouped development evaluation. Whole-recording background holdout gives 4% indoors and 0% outdoors; these results do not establish unseen-background generalization. Previous 10-s results remain in results/history, with current evidence in results/array_v8_2s. Live end-to-end and 300-hour operation of this new combination have not been validated.

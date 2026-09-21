@@ -61,3 +61,5 @@ C050	checkpoints/checkpoint_050.pth	Narrative result (no standalone table)	LFCC-
 C051	checkpoints/checkpoint_051.pth	Narrative result (no standalone table)	Mel-primary TripleFusion binary teacher used in the binary teacher comparison
 C052	checkpoints/checkpoint_052.pth	Tables 1, 3 and 4	Selected MFCC-primary TripleFusion binary teacher
 C053	checkpoints/checkpoint_053.pth	Table 10	MFCC-primary TripleFusion teacher for the three-class extension
+
+Array v8 / manuscript v10.21: C027 remains the frozen student feature extractor. Table 11 additionally requires checkpoints/array_v8_device_head.json (field-label-trained RBF head). Fold-specific models and strict background failures are archived with the evaluation code. Table 12 uses the original student deployment records, not the new RBF pipeline.

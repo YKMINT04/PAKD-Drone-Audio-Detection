@@ -1,0 +1,22 @@
+{
+  "export_max_score_error": 1.1032862401449961e-07,
+  "student_retrained": false,
+  "device_head_trained": true,
+  "labels_used_for_device_training": true,
+  "clips": 840,
+  "recordings": 33,
+  "positive_clips": 640,
+  "negative_clips": 200,
+  "short_tails_retained": true,
+  "independent_confirmation": false,
+  "selected_using_development_crossvalidation": true,
+  "background_separation": "50-second held blocks with 10-second exclusion gap; one recording per background",
+  "audits": {
+    "development_grouped": {
+      "all_scenes_at_least_90": true
+    },
+    "strict_recording": {
+      "all_scenes_at_least_90": false
+    }
+  }
+}

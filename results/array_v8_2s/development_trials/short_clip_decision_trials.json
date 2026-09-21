@@ -1,0 +1,1346 @@
+[
+  {
+    "width": 3,
+    "threshold": 0.5,
+    "ratio": 0.5,
+    "min_accuracy": 0.8913043478260869,
+    "scenes": [
+      {
+        "scene": "5",
+        "n": 20,
+        "correct": 18,
+        "accuracy": 0.9
+      },
+      {
+        "scene": "25",
+        "n": 30,
+        "correct": 30,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "50",
+        "n": 135,
+        "correct": 135,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "75",
+        "n": 150,
+        "correct": 149,
+        "accuracy": 0.9933333333333333
+      },
+      {
+        "scene": "100",
+        "n": 259,
+        "correct": 254,
+        "accuracy": 0.9806949806949807
+      },
+      {
+        "scene": "120",
+        "n": 46,
+        "correct": 41,
+        "accuracy": 0.8913043478260869
+      },
+      {
+        "scene": "室内无无人机",
+        "n": 50,
+        "correct": 45,
+        "accuracy": 0.9
+      },
+      {
+        "scene": "室外无无人机",
+        "n": 150,
+        "correct": 145,
+        "accuracy": 0.9666666666666667
+      }
+    ]
+  },
+  {
+    "width": 2,
+    "threshold": 0.45,
+    "ratio": 0.5,
+    "min_accuracy": 0.88,
+    "scenes": [
+      {
+        "scene": "5",
+        "n": 20,
+        "correct": 19,
+        "accuracy": 0.95
+      },
+      {
+        "scene": "25",
+        "n": 30,
+        "correct": 30,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "50",
+        "n": 135,
+        "correct": 135,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "75",
+        "n": 150,
+        "correct": 150,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "100",
+        "n": 259,
+        "correct": 258,
+        "accuracy": 0.9961389961389961
+      },
+      {
+        "scene": "120",
+        "n": 46,
+        "correct": 42,
+        "accuracy": 0.9130434782608695
+      },
+      {
+        "scene": "室内无无人机",
+        "n": 50,
+        "correct": 44,
+        "accuracy": 0.88
+      },
+      {
+        "scene": "室外无无人机",
+        "n": 150,
+        "correct": 145,
+        "accuracy": 0.9666666666666667
+      }
+    ]
+  },
+  {
+    "width": 3,
+    "threshold": 0.45,
+    "ratio": 0.5,
+    "min_accuracy": 0.88,
+    "scenes": [
+      {
+        "scene": "5",
+        "n": 20,
+        "correct": 18,
+        "accuracy": 0.9
+      },
+      {
+        "scene": "25",
+        "n": 30,
+        "correct": 30,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "50",
+        "n": 135,
+        "correct": 135,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "75",
+        "n": 150,
+        "correct": 149,
+        "accuracy": 0.9933333333333333
+      },
+      {
+        "scene": "100",
+        "n": 259,
+        "correct": 256,
+        "accuracy": 0.9884169884169884
+      },
+      {
+        "scene": "120",
+        "n": 46,
+        "correct": 41,
+        "accuracy": 0.8913043478260869
+      },
+      {
+        "scene": "室内无无人机",
+        "n": 50,
+        "correct": 44,
+        "accuracy": 0.88
+      },
+      {
+        "scene": "室外无无人机",
+        "n": 150,
+        "correct": 145,
+        "accuracy": 0.9666666666666667
+      }
+    ]
+  },
+  {
+    "width": 3,
+    "threshold": 0.45,
+    "ratio": 0.2,
+    "min_accuracy": 0.86,
+    "scenes": [
+      {
+        "scene": "5",
+        "n": 20,
+        "correct": 20,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "25",
+        "n": 30,
+        "correct": 30,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "50",
+        "n": 135,
+        "correct": 135,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "75",
+        "n": 150,
+        "correct": 150,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "100",
+        "n": 259,
+        "correct": 259,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "120",
+        "n": 46,
+        "correct": 42,
+        "accuracy": 0.9130434782608695
+      },
+      {
+        "scene": "室内无无人机",
+        "n": 50,
+        "correct": 43,
+        "accuracy": 0.86
+      },
+      {
+        "scene": "室外无无人机",
+        "n": 150,
+        "correct": 142,
+        "accuracy": 0.9466666666666667
+      }
+    ]
+  },
+  {
+    "width": 3,
+    "threshold": 0.5,
+    "ratio": 0.2,
+    "min_accuracy": 0.86,
+    "scenes": [
+      {
+        "scene": "5",
+        "n": 20,
+        "correct": 19,
+        "accuracy": 0.95
+      },
+      {
+        "scene": "25",
+        "n": 30,
+        "correct": 30,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "50",
+        "n": 135,
+        "correct": 135,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "75",
+        "n": 150,
+        "correct": 150,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "100",
+        "n": 259,
+        "correct": 259,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "120",
+        "n": 46,
+        "correct": 42,
+        "accuracy": 0.9130434782608695
+      },
+      {
+        "scene": "室内无无人机",
+        "n": 50,
+        "correct": 43,
+        "accuracy": 0.86
+      },
+      {
+        "scene": "室外无无人机",
+        "n": 150,
+        "correct": 143,
+        "accuracy": 0.9533333333333334
+      }
+    ]
+  },
+  {
+    "width": 3,
+    "threshold": 0.4,
+    "ratio": 0.2,
+    "min_accuracy": 0.86,
+    "scenes": [
+      {
+        "scene": "5",
+        "n": 20,
+        "correct": 20,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "25",
+        "n": 30,
+        "correct": 30,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "50",
+        "n": 135,
+        "correct": 135,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "75",
+        "n": 150,
+        "correct": 150,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "100",
+        "n": 259,
+        "correct": 259,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "120",
+        "n": 46,
+        "correct": 42,
+        "accuracy": 0.9130434782608695
+      },
+      {
+        "scene": "室内无无人机",
+        "n": 50,
+        "correct": 43,
+        "accuracy": 0.86
+      },
+      {
+        "scene": "室外无无人机",
+        "n": 150,
+        "correct": 140,
+        "accuracy": 0.9333333333333333
+      }
+    ]
+  },
+  {
+    "width": 3,
+    "threshold": 0.4,
+    "ratio": 0.5,
+    "min_accuracy": 0.86,
+    "scenes": [
+      {
+        "scene": "5",
+        "n": 20,
+        "correct": 18,
+        "accuracy": 0.9
+      },
+      {
+        "scene": "25",
+        "n": 30,
+        "correct": 30,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "50",
+        "n": 135,
+        "correct": 135,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "75",
+        "n": 150,
+        "correct": 150,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "100",
+        "n": 259,
+        "correct": 257,
+        "accuracy": 0.9922779922779923
+      },
+      {
+        "scene": "120",
+        "n": 46,
+        "correct": 42,
+        "accuracy": 0.9130434782608695
+      },
+      {
+        "scene": "室内无无人机",
+        "n": 50,
+        "correct": 43,
+        "accuracy": 0.86
+      },
+      {
+        "scene": "室外无无人机",
+        "n": 150,
+        "correct": 144,
+        "accuracy": 0.96
+      }
+    ]
+  },
+  {
+    "width": 3,
+    "threshold": 0.35,
+    "ratio": 0.2,
+    "min_accuracy": 0.86,
+    "scenes": [
+      {
+        "scene": "5",
+        "n": 20,
+        "correct": 20,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "25",
+        "n": 30,
+        "correct": 30,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "50",
+        "n": 135,
+        "correct": 135,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "75",
+        "n": 150,
+        "correct": 150,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "100",
+        "n": 259,
+        "correct": 259,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "120",
+        "n": 46,
+        "correct": 43,
+        "accuracy": 0.9347826086956522
+      },
+      {
+        "scene": "室内无无人机",
+        "n": 50,
+        "correct": 43,
+        "accuracy": 0.86
+      },
+      {
+        "scene": "室外无无人机",
+        "n": 150,
+        "correct": 138,
+        "accuracy": 0.92
+      }
+    ]
+  },
+  {
+    "width": 3,
+    "threshold": 0.35,
+    "ratio": 0.5,
+    "min_accuracy": 0.86,
+    "scenes": [
+      {
+        "scene": "5",
+        "n": 20,
+        "correct": 18,
+        "accuracy": 0.9
+      },
+      {
+        "scene": "25",
+        "n": 30,
+        "correct": 30,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "50",
+        "n": 135,
+        "correct": 135,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "75",
+        "n": 150,
+        "correct": 150,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "100",
+        "n": 259,
+        "correct": 258,
+        "accuracy": 0.9961389961389961
+      },
+      {
+        "scene": "120",
+        "n": 46,
+        "correct": 42,
+        "accuracy": 0.9130434782608695
+      },
+      {
+        "scene": "室内无无人机",
+        "n": 50,
+        "correct": 43,
+        "accuracy": 0.86
+      },
+      {
+        "scene": "室外无无人机",
+        "n": 150,
+        "correct": 141,
+        "accuracy": 0.94
+      }
+    ]
+  },
+  {
+    "width": 1,
+    "threshold": 0.35,
+    "ratio": 0.5,
+    "min_accuracy": 0.8478260869565217,
+    "scenes": [
+      {
+        "scene": "5",
+        "n": 20,
+        "correct": 20,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "25",
+        "n": 30,
+        "correct": 30,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "50",
+        "n": 135,
+        "correct": 135,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "75",
+        "n": 150,
+        "correct": 150,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "100",
+        "n": 259,
+        "correct": 259,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "120",
+        "n": 46,
+        "correct": 39,
+        "accuracy": 0.8478260869565217
+      },
+      {
+        "scene": "室内无无人机",
+        "n": 50,
+        "correct": 45,
+        "accuracy": 0.9
+      },
+      {
+        "scene": "室外无无人机",
+        "n": 150,
+        "correct": 150,
+        "accuracy": 1.0
+      }
+    ]
+  },
+  {
+    "width": 1,
+    "threshold": 0.4,
+    "ratio": 0.5,
+    "min_accuracy": 0.8478260869565217,
+    "scenes": [
+      {
+        "scene": "5",
+        "n": 20,
+        "correct": 20,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "25",
+        "n": 30,
+        "correct": 30,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "50",
+        "n": 135,
+        "correct": 135,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "75",
+        "n": 150,
+        "correct": 150,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "100",
+        "n": 259,
+        "correct": 258,
+        "accuracy": 0.9961389961389961
+      },
+      {
+        "scene": "120",
+        "n": 46,
+        "correct": 39,
+        "accuracy": 0.8478260869565217
+      },
+      {
+        "scene": "室内无无人机",
+        "n": 50,
+        "correct": 46,
+        "accuracy": 0.92
+      },
+      {
+        "scene": "室外无无人机",
+        "n": 150,
+        "correct": 150,
+        "accuracy": 1.0
+      }
+    ]
+  },
+  {
+    "width": 2,
+    "threshold": 0.5,
+    "ratio": 0.5,
+    "min_accuracy": 0.8478260869565217,
+    "scenes": [
+      {
+        "scene": "5",
+        "n": 20,
+        "correct": 18,
+        "accuracy": 0.9
+      },
+      {
+        "scene": "25",
+        "n": 30,
+        "correct": 30,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "50",
+        "n": 135,
+        "correct": 135,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "75",
+        "n": 150,
+        "correct": 150,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "100",
+        "n": 259,
+        "correct": 257,
+        "accuracy": 0.9922779922779923
+      },
+      {
+        "scene": "120",
+        "n": 46,
+        "correct": 39,
+        "accuracy": 0.8478260869565217
+      },
+      {
+        "scene": "室内无无人机",
+        "n": 50,
+        "correct": 47,
+        "accuracy": 0.94
+      },
+      {
+        "scene": "室外无无人机",
+        "n": 150,
+        "correct": 146,
+        "accuracy": 0.9733333333333334
+      }
+    ]
+  },
+  {
+    "width": 2,
+    "threshold": 0.5,
+    "ratio": 0.2,
+    "min_accuracy": 0.84,
+    "scenes": [
+      {
+        "scene": "5",
+        "n": 20,
+        "correct": 20,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "25",
+        "n": 30,
+        "correct": 30,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "50",
+        "n": 135,
+        "correct": 135,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "75",
+        "n": 150,
+        "correct": 150,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "100",
+        "n": 259,
+        "correct": 259,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "120",
+        "n": 46,
+        "correct": 42,
+        "accuracy": 0.9130434782608695
+      },
+      {
+        "scene": "室内无无人机",
+        "n": 50,
+        "correct": 42,
+        "accuracy": 0.84
+      },
+      {
+        "scene": "室外无无人机",
+        "n": 150,
+        "correct": 142,
+        "accuracy": 0.9466666666666667
+      }
+    ]
+  },
+  {
+    "width": 2,
+    "threshold": 0.45,
+    "ratio": 0.2,
+    "min_accuracy": 0.82,
+    "scenes": [
+      {
+        "scene": "5",
+        "n": 20,
+        "correct": 20,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "25",
+        "n": 30,
+        "correct": 30,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "50",
+        "n": 135,
+        "correct": 135,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "75",
+        "n": 150,
+        "correct": 150,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "100",
+        "n": 259,
+        "correct": 259,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "120",
+        "n": 46,
+        "correct": 43,
+        "accuracy": 0.9347826086956522
+      },
+      {
+        "scene": "室内无无人机",
+        "n": 50,
+        "correct": 41,
+        "accuracy": 0.82
+      },
+      {
+        "scene": "室外无无人机",
+        "n": 150,
+        "correct": 142,
+        "accuracy": 0.9466666666666667
+      }
+    ]
+  },
+  {
+    "width": 2,
+    "threshold": 0.4,
+    "ratio": 0.5,
+    "min_accuracy": 0.82,
+    "scenes": [
+      {
+        "scene": "5",
+        "n": 20,
+        "correct": 19,
+        "accuracy": 0.95
+      },
+      {
+        "scene": "25",
+        "n": 30,
+        "correct": 30,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "50",
+        "n": 135,
+        "correct": 135,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "75",
+        "n": 150,
+        "correct": 150,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "100",
+        "n": 259,
+        "correct": 258,
+        "accuracy": 0.9961389961389961
+      },
+      {
+        "scene": "120",
+        "n": 46,
+        "correct": 43,
+        "accuracy": 0.9347826086956522
+      },
+      {
+        "scene": "室内无无人机",
+        "n": 50,
+        "correct": 41,
+        "accuracy": 0.82
+      },
+      {
+        "scene": "室外无无人机",
+        "n": 150,
+        "correct": 143,
+        "accuracy": 0.9533333333333334
+      }
+    ]
+  },
+  {
+    "width": 1,
+    "threshold": 0.45,
+    "ratio": 0.5,
+    "min_accuracy": 0.8043478260869565,
+    "scenes": [
+      {
+        "scene": "5",
+        "n": 20,
+        "correct": 20,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "25",
+        "n": 30,
+        "correct": 30,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "50",
+        "n": 135,
+        "correct": 135,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "75",
+        "n": 150,
+        "correct": 150,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "100",
+        "n": 259,
+        "correct": 258,
+        "accuracy": 0.9961389961389961
+      },
+      {
+        "scene": "120",
+        "n": 46,
+        "correct": 37,
+        "accuracy": 0.8043478260869565
+      },
+      {
+        "scene": "室内无无人机",
+        "n": 50,
+        "correct": 46,
+        "accuracy": 0.92
+      },
+      {
+        "scene": "室外无无人机",
+        "n": 150,
+        "correct": 150,
+        "accuracy": 1.0
+      }
+    ]
+  },
+  {
+    "width": 1,
+    "threshold": 0.5,
+    "ratio": 0.5,
+    "min_accuracy": 0.8043478260869565,
+    "scenes": [
+      {
+        "scene": "5",
+        "n": 20,
+        "correct": 20,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "25",
+        "n": 30,
+        "correct": 30,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "50",
+        "n": 135,
+        "correct": 135,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "75",
+        "n": 150,
+        "correct": 150,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "100",
+        "n": 259,
+        "correct": 256,
+        "accuracy": 0.9884169884169884
+      },
+      {
+        "scene": "120",
+        "n": 46,
+        "correct": 37,
+        "accuracy": 0.8043478260869565
+      },
+      {
+        "scene": "室内无无人机",
+        "n": 50,
+        "correct": 46,
+        "accuracy": 0.92
+      },
+      {
+        "scene": "室外无无人机",
+        "n": 150,
+        "correct": 150,
+        "accuracy": 1.0
+      }
+    ]
+  },
+  {
+    "width": 2,
+    "threshold": 0.35,
+    "ratio": 0.5,
+    "min_accuracy": 0.8,
+    "scenes": [
+      {
+        "scene": "5",
+        "n": 20,
+        "correct": 20,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "25",
+        "n": 30,
+        "correct": 30,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "50",
+        "n": 135,
+        "correct": 135,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "75",
+        "n": 150,
+        "correct": 150,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "100",
+        "n": 259,
+        "correct": 258,
+        "accuracy": 0.9961389961389961
+      },
+      {
+        "scene": "120",
+        "n": 46,
+        "correct": 43,
+        "accuracy": 0.9347826086956522
+      },
+      {
+        "scene": "室内无无人机",
+        "n": 50,
+        "correct": 40,
+        "accuracy": 0.8
+      },
+      {
+        "scene": "室外无无人机",
+        "n": 150,
+        "correct": 142,
+        "accuracy": 0.9466666666666667
+      }
+    ]
+  },
+  {
+    "width": 2,
+    "threshold": 0.4,
+    "ratio": 0.2,
+    "min_accuracy": 0.8,
+    "scenes": [
+      {
+        "scene": "5",
+        "n": 20,
+        "correct": 20,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "25",
+        "n": 30,
+        "correct": 30,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "50",
+        "n": 135,
+        "correct": 135,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "75",
+        "n": 150,
+        "correct": 150,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "100",
+        "n": 259,
+        "correct": 259,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "120",
+        "n": 46,
+        "correct": 43,
+        "accuracy": 0.9347826086956522
+      },
+      {
+        "scene": "室内无无人机",
+        "n": 50,
+        "correct": 40,
+        "accuracy": 0.8
+      },
+      {
+        "scene": "室外无无人机",
+        "n": 150,
+        "correct": 138,
+        "accuracy": 0.92
+      }
+    ]
+  },
+  {
+    "width": 1,
+    "threshold": 0.5,
+    "ratio": 0.2,
+    "min_accuracy": 0.72,
+    "scenes": [
+      {
+        "scene": "5",
+        "n": 20,
+        "correct": 20,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "25",
+        "n": 30,
+        "correct": 30,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "50",
+        "n": 135,
+        "correct": 135,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "75",
+        "n": 150,
+        "correct": 150,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "100",
+        "n": 259,
+        "correct": 259,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "120",
+        "n": 46,
+        "correct": 44,
+        "accuracy": 0.9565217391304348
+      },
+      {
+        "scene": "室内无无人机",
+        "n": 50,
+        "correct": 36,
+        "accuracy": 0.72
+      },
+      {
+        "scene": "室外无无人机",
+        "n": 150,
+        "correct": 139,
+        "accuracy": 0.9266666666666666
+      }
+    ]
+  },
+  {
+    "width": 2,
+    "threshold": 0.35,
+    "ratio": 0.2,
+    "min_accuracy": 0.72,
+    "scenes": [
+      {
+        "scene": "5",
+        "n": 20,
+        "correct": 20,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "25",
+        "n": 30,
+        "correct": 30,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "50",
+        "n": 135,
+        "correct": 135,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "75",
+        "n": 150,
+        "correct": 150,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "100",
+        "n": 259,
+        "correct": 259,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "120",
+        "n": 46,
+        "correct": 44,
+        "accuracy": 0.9565217391304348
+      },
+      {
+        "scene": "室内无无人机",
+        "n": 50,
+        "correct": 36,
+        "accuracy": 0.72
+      },
+      {
+        "scene": "室外无无人机",
+        "n": 150,
+        "correct": 135,
+        "accuracy": 0.9
+      }
+    ]
+  },
+  {
+    "width": 1,
+    "threshold": 0.45,
+    "ratio": 0.2,
+    "min_accuracy": 0.7,
+    "scenes": [
+      {
+        "scene": "5",
+        "n": 20,
+        "correct": 20,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "25",
+        "n": 30,
+        "correct": 30,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "50",
+        "n": 135,
+        "correct": 135,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "75",
+        "n": 150,
+        "correct": 150,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "100",
+        "n": 259,
+        "correct": 259,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "120",
+        "n": 46,
+        "correct": 44,
+        "accuracy": 0.9565217391304348
+      },
+      {
+        "scene": "室内无无人机",
+        "n": 50,
+        "correct": 35,
+        "accuracy": 0.7
+      },
+      {
+        "scene": "室外无无人机",
+        "n": 150,
+        "correct": 137,
+        "accuracy": 0.9133333333333333
+      }
+    ]
+  },
+  {
+    "width": 1,
+    "threshold": 0.4,
+    "ratio": 0.2,
+    "min_accuracy": 0.64,
+    "scenes": [
+      {
+        "scene": "5",
+        "n": 20,
+        "correct": 20,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "25",
+        "n": 30,
+        "correct": 30,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "50",
+        "n": 135,
+        "correct": 135,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "75",
+        "n": 150,
+        "correct": 150,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "100",
+        "n": 259,
+        "correct": 259,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "120",
+        "n": 46,
+        "correct": 44,
+        "accuracy": 0.9565217391304348
+      },
+      {
+        "scene": "室内无无人机",
+        "n": 50,
+        "correct": 32,
+        "accuracy": 0.64
+      },
+      {
+        "scene": "室外无无人机",
+        "n": 150,
+        "correct": 134,
+        "accuracy": 0.8933333333333333
+      }
+    ]
+  },
+  {
+    "width": 1,
+    "threshold": 0.35,
+    "ratio": 0.2,
+    "min_accuracy": 0.64,
+    "scenes": [
+      {
+        "scene": "5",
+        "n": 20,
+        "correct": 20,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "25",
+        "n": 30,
+        "correct": 30,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "50",
+        "n": 135,
+        "correct": 135,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "75",
+        "n": 150,
+        "correct": 150,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "100",
+        "n": 259,
+        "correct": 259,
+        "accuracy": 1.0
+      },
+      {
+        "scene": "120",
+        "n": 46,
+        "correct": 44,
+        "accuracy": 0.9565217391304348
+      },
+      {
+        "scene": "室内无无人机",
+        "n": 50,
+        "correct": 32,
+        "accuracy": 0.64
+      },
+      {
+        "scene": "室外无无人机",
+        "n": 150,
+        "correct": 131,
+        "accuracy": 0.8733333333333333
+      }
+    ]
+  }
+]

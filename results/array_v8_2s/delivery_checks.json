@@ -1,0 +1,14 @@
+{
+  "clips_checked": 840,
+  "runtime_correct": 840,
+  "all_clips_independent_after_beam_generation": true,
+  "no_cross_clip_classifier_history": true,
+  "prebeamforming_was_continuous_recording": true,
+  "all_short_tails_retained": true,
+  "student_checksum_unchanged": true,
+  "repeat_inference_max_embedding_delta": 0.0,
+  "exported_fold_max_margin_delta": 7.312856231678211e-08,
+  "all_fold_predictions_identical": true,
+  "all_runtime_predictions_identical": true,
+  "source_and_paper_unmodified": true
+}
