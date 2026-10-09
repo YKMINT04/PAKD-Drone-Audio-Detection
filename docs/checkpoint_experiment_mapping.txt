@@ -1,4 +1,4 @@
-PAKD checkpoint-to-experiment mapping
+CWPKD checkpoint-to-experiment mapping
 Scope: current manuscript
 
 Notes:
@@ -8,10 +8,10 @@ Notes:
 - C024 and C038 are byte-identical copies retained for their separate table-specific references.
 
 Artifact	Checkpoint file	Paper table(s)	Experiment
-C001	checkpoints/checkpoint_001.pth	Table 2	Mel student with MTFA attention
+C001	checkpoints/checkpoint_001.pth	Table 2	Mel student with TriTGate attention
 C002	checkpoints/checkpoint_002.pth	Table 2	Mel student without an attention module
 C003	checkpoints/checkpoint_003.pth	Table 2	Mel student with SE attention
-C004	checkpoints/checkpoint_004.pth	Table 3	MFCC single-branch teacher
+C004	checkpoints/checkpoint_004.pth	Tables 1 and 3	MFCC single-branch teacher
 C005	checkpoints/checkpoint_005.pth	Table 3	MFCC+LFCC two-branch teacher
 C006	checkpoints/checkpoint_006.pth	Table 3	MFCC+Mel two-branch teacher
 C007	checkpoints/checkpoint_007.pth	Table 4	AST in-domain reference model
@@ -25,20 +25,20 @@ C014	checkpoints/checkpoint_014.pth	Table 9	AT repeated experiment, Run A
 C015	checkpoints/checkpoint_015.pth	Table 9	AT repeated experiment, Run B
 C016	checkpoints/checkpoint_016.pth	Table 9	Task-loss baseline repeated experiment, Run A
 C017	checkpoints/checkpoint_017.pth	Table 9	Task-loss baseline repeated experiment, Run B
-C018	checkpoints/checkpoint_018.pth	Table 9	MFCC-primary teacher to Mel-student PAKD repeated experiment, Run A
-C019	checkpoints/checkpoint_019.pth	Table 9	MFCC-primary teacher to Mel-student PAKD repeated experiment, Run B
+C018	checkpoints/checkpoint_018.pth	Table 9	MFCC-primary teacher to Mel-student CWPKD repeated experiment, Run A
+C019	checkpoints/checkpoint_019.pth	Table 9	MFCC-primary teacher to Mel-student CWPKD repeated experiment, Run B
 C020	checkpoints/checkpoint_020.pth	Tables 5 and 6	LFCC student trained with task loss only
-C021	checkpoints/checkpoint_021.pth	Tables 5 and 6	LFCC student distilled by an LFCC-primary teacher using PAKD
-C022	checkpoints/checkpoint_022.pth	Tables 5 and 6	LFCC student distilled by a Mel-primary teacher using PAKD
-C023	checkpoints/checkpoint_023.pth	Tables 5 and 6	LFCC student distilled by an MFCC-primary teacher using PAKD
+C021	checkpoints/checkpoint_021.pth	Tables 5 and 6	LFCC student distilled by an LFCC-primary teacher using CWPKD
+C022	checkpoints/checkpoint_022.pth	Tables 5 and 6	LFCC student distilled by a Mel-primary teacher using CWPKD
+C023	checkpoints/checkpoint_023.pth	Tables 5 and 6	LFCC student distilled by an MFCC-primary teacher using CWPKD
 C024	checkpoints/checkpoint_024.pth	Tables 5, 6, 7 and 9	Mel student trained with task loss only; also the repeated-experiment Run C baseline
-C025	checkpoints/checkpoint_025.pth	Tables 5 and 6	Mel student distilled by an LFCC-primary teacher using PAKD
-C026	checkpoints/checkpoint_026.pth	Tables 5 and 6	Mel student distilled by a Mel-primary teacher using PAKD
-C027	checkpoints/checkpoint_027.pth	Tables 5, 6, 7, 8, 9, 11 and 12	Selected Mel PAKD student distilled by the MFCC-primary teacher; also Full PAKD, repeated-experiment Run C, frozen array-evaluation model and deployment model
+C025	checkpoints/checkpoint_025.pth	Tables 5 and 6	Mel student distilled by an LFCC-primary teacher using CWPKD
+C026	checkpoints/checkpoint_026.pth	Tables 5 and 6	Mel student distilled by a Mel-primary teacher using CWPKD
+C027	checkpoints/checkpoint_027.pth	Tables 5, 6, 7, 8, 9, 11 and 12	Selected Mel CWPKD student distilled by the MFCC-primary teacher; also Full CWPKD, repeated-experiment Run C, frozen array-evaluation model and deployment model
 C028	checkpoints/checkpoint_028.pth	Tables 5 and 6	MFCC student trained with task loss only
-C029	checkpoints/checkpoint_029.pth	Tables 5 and 6	MFCC student distilled by an LFCC-primary teacher using PAKD
-C030	checkpoints/checkpoint_030.pth	Tables 5 and 6	MFCC student distilled by a Mel-primary teacher using PAKD
-C031	checkpoints/checkpoint_031.pth	Tables 5 and 6	MFCC student distilled by an MFCC-primary teacher using PAKD
+C029	checkpoints/checkpoint_029.pth	Tables 5 and 6	MFCC student distilled by an LFCC-primary teacher using CWPKD
+C030	checkpoints/checkpoint_030.pth	Tables 5 and 6	MFCC student distilled by a Mel-primary teacher using CWPKD
+C031	checkpoints/checkpoint_031.pth	Tables 5 and 6	MFCC student distilled by an MFCC-primary teacher using CWPKD
 C032	checkpoints/checkpoint_032.pth	Tables 7 and 9	Mel AT student in the controlled KD comparison; also repeated-experiment Run C
 C033	checkpoints/checkpoint_033.pth	Table 7	Mel student trained with DKD
 C034	checkpoints/checkpoint_034.pth	Tables 7 and 8	Mel student trained with Hinton KD; reused as the KL-KD component-ablation model
@@ -54,12 +54,12 @@ C043	checkpoints/checkpoint_043.pth	Table 10	Three-class Mel student trained wit
 C044	checkpoints/checkpoint_044.pth	Table 10	Three-class Mel student trained with DKD
 C045	checkpoints/checkpoint_045.pth	Table 10	Three-class Mel student trained with Hinton KD
 C046	checkpoints/checkpoint_046.pth	Table 10	Three-class Mel student trained with NormKD
-C047	checkpoints/checkpoint_047.pth	Table 10	Three-class Mel PAKD student distilled by the MFCC-primary teacher
+C047	checkpoints/checkpoint_047.pth	Table 10	Three-class Mel CWPKD student distilled by the MFCC-primary teacher
 C048	checkpoints/checkpoint_048.pth	Table 10	Three-class Mel student trained with RKD
 C049	checkpoints/checkpoint_049.pth	Table 10	Three-class Mel student trained with the TRKD-inspired method
-C050	checkpoints/checkpoint_050.pth	Narrative result (no standalone table)	LFCC-primary TripleFusion binary teacher used for the external DADS teacher evaluation
-C051	checkpoints/checkpoint_051.pth	Narrative result (no standalone table)	Mel-primary TripleFusion binary teacher used in the binary teacher comparison
-C052	checkpoints/checkpoint_052.pth	Tables 1, 3 and 4	Selected MFCC-primary TripleFusion binary teacher
-C053	checkpoints/checkpoint_053.pth	Table 10	MFCC-primary TripleFusion teacher for the three-class extension
+C050	checkpoints/checkpoint_050.pth	Narrative result (no standalone table)	LFCC-primary PriXFuse binary teacher used for the external DADS teacher evaluation
+C051	checkpoints/checkpoint_051.pth	Narrative result (no standalone table)	Mel-primary PriXFuse binary teacher used in the binary teacher comparison
+C052	checkpoints/checkpoint_052.pth	Tables 1, 3 and 4	Selected MFCC-primary PriXFuse binary teacher
+C053	checkpoints/checkpoint_053.pth	Table 10	MFCC-primary PriXFuse teacher for the three-class extension
 
-Array v8 / manuscript v10.21: C027 remains the frozen student feature extractor. Table 11 additionally requires checkpoints/array_v8_device_head.json (field-label-trained RBF head). Fold-specific models and strict background failures are archived with the evaluation code. Table 12 uses the original student deployment records, not the new RBF pipeline.
+Array v9 / manuscript v10.25: C027 remains unchanged. Table 11 uses held-group supervised linear device heads. checkpoints/array_v9_1s_device_head.json is the all-development-data inference head, not the head used to score its own training clips. Legacy array_v8_device_head.json corresponds only to the previous 2-s version. Table 12 remains the original student edge record.

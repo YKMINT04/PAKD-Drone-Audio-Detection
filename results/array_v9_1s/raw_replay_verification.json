@@ -1,0 +1,805 @@
+{
+  "n": 99,
+  "same_predictions": 99,
+  "maximum_margin_error": 3.552713678800501e-15,
+  "mean_processing_s": 0.3786798121210736,
+  "p95_processing_s": 0.39771968999921226,
+  "max_processing_s": 0.4406868999976723,
+  "count_over_nominal_window": 0,
+  "nominal_window_s": 1.0,
+  "scope": "warm-start laptop; includes independent raw-clip beamforming, Mel, public frozen PAKD, descriptors and head; excludes file I/O and one-time model loading",
+  "rows": [
+    {
+      "recording": "100",
+      "start_s": 0.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.37374090000230353,
+      "input_s": 1.0
+    },
+    {
+      "recording": "100",
+      "start_s": 60.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.37860729999738396,
+      "input_s": 1.0
+    },
+    {
+      "recording": "100",
+      "start_s": 119.0,
+      "error": 1.7763568394002505e-15,
+      "same_prediction": true,
+      "processing_s": 0.37740990000020247,
+      "input_s": 1.0
+    },
+    {
+      "recording": "100-1",
+      "start_s": 0.0,
+      "error": 1.7763568394002505e-15,
+      "same_prediction": true,
+      "processing_s": 0.3943920000019716,
+      "input_s": 1.0
+    },
+    {
+      "recording": "100-1",
+      "start_s": 60.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.3742175000006682,
+      "input_s": 1.0
+    },
+    {
+      "recording": "100-1",
+      "start_s": 119.0,
+      "error": 1.7763568394002505e-15,
+      "same_prediction": true,
+      "processing_s": 0.3974196999988635,
+      "input_s": 1.0
+    },
+    {
+      "recording": "100-2",
+      "start_s": 0.0,
+      "error": 1.7763568394002505e-15,
+      "same_prediction": true,
+      "processing_s": 0.38001769999755197,
+      "input_s": 1.0
+    },
+    {
+      "recording": "100-2",
+      "start_s": 19.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.37064590000227327,
+      "input_s": 1.0
+    },
+    {
+      "recording": "100-2",
+      "start_s": 37.0,
+      "error": 2.6645352591003757e-15,
+      "same_prediction": true,
+      "processing_s": 0.15496139999959269,
+      "input_s": 0.264
+    },
+    {
+      "recording": "100-3",
+      "start_s": 0.0,
+      "error": 4.440892098500626e-16,
+      "same_prediction": true,
+      "processing_s": 0.37685509999937494,
+      "input_s": 1.0
+    },
+    {
+      "recording": "100-3",
+      "start_s": 60.0,
+      "error": 1.7763568394002505e-15,
+      "same_prediction": true,
+      "processing_s": 0.3805929999980435,
+      "input_s": 1.0
+    },
+    {
+      "recording": "100-3",
+      "start_s": 119.0,
+      "error": 3.552713678800501e-15,
+      "same_prediction": true,
+      "processing_s": 0.3761814999998023,
+      "input_s": 1.0
+    },
+    {
+      "recording": "100-4",
+      "start_s": 0.0,
+      "error": 1.7763568394002505e-15,
+      "same_prediction": true,
+      "processing_s": 0.3719883999983722,
+      "input_s": 1.0
+    },
+    {
+      "recording": "100-4",
+      "start_s": 60.0,
+      "error": 1.7763568394002505e-15,
+      "same_prediction": true,
+      "processing_s": 0.3810750000011467,
+      "input_s": 1.0
+    },
+    {
+      "recording": "100-4",
+      "start_s": 119.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.38298659999782103,
+      "input_s": 1.0
+    },
+    {
+      "recording": "120",
+      "start_s": 0.0,
+      "error": 8.881784197001252e-16,
+      "same_prediction": true,
+      "processing_s": 0.37538709999716957,
+      "input_s": 1.0
+    },
+    {
+      "recording": "120",
+      "start_s": 22.0,
+      "error": 8.881784197001252e-16,
+      "same_prediction": true,
+      "processing_s": 0.401224799999909,
+      "input_s": 1.0
+    },
+    {
+      "recording": "120",
+      "start_s": 44.0,
+      "error": 1.7763568394002505e-15,
+      "same_prediction": true,
+      "processing_s": 0.37452290000146604,
+      "input_s": 1.0
+    },
+    {
+      "recording": "120-1",
+      "start_s": 0.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.38190250000116066,
+      "input_s": 1.0
+    },
+    {
+      "recording": "120-1",
+      "start_s": 22.0,
+      "error": 1.7763568394002505e-15,
+      "same_prediction": true,
+      "processing_s": 0.38552029999846127,
+      "input_s": 1.0
+    },
+    {
+      "recording": "120-1",
+      "start_s": 44.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.3838739999991958,
+      "input_s": 1.0
+    },
+    {
+      "recording": "25",
+      "start_s": 0.0,
+      "error": 1.7763568394002505e-15,
+      "same_prediction": true,
+      "processing_s": 0.38617510000040056,
+      "input_s": 1.0
+    },
+    {
+      "recording": "25",
+      "start_s": 5.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.37904250000065076,
+      "input_s": 1.0
+    },
+    {
+      "recording": "25",
+      "start_s": 9.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.3817622999995365,
+      "input_s": 1.0
+    },
+    {
+      "recording": "25-1",
+      "start_s": 0.0,
+      "error": 1.7763568394002505e-15,
+      "same_prediction": true,
+      "processing_s": 0.38073069999882136,
+      "input_s": 1.0
+    },
+    {
+      "recording": "25-1",
+      "start_s": 5.0,
+      "error": 1.7763568394002505e-15,
+      "same_prediction": true,
+      "processing_s": 0.38516299999901094,
+      "input_s": 1.0
+    },
+    {
+      "recording": "25-1",
+      "start_s": 9.0,
+      "error": 3.552713678800501e-15,
+      "same_prediction": true,
+      "processing_s": 0.38791049999781535,
+      "input_s": 1.0
+    },
+    {
+      "recording": "25-2",
+      "start_s": 0.0,
+      "error": 3.552713678800501e-15,
+      "same_prediction": true,
+      "processing_s": 0.4340434000005189,
+      "input_s": 1.0
+    },
+    {
+      "recording": "25-2",
+      "start_s": 5.0,
+      "error": 1.7763568394002505e-15,
+      "same_prediction": true,
+      "processing_s": 0.374248299998726,
+      "input_s": 1.0
+    },
+    {
+      "recording": "25-2",
+      "start_s": 9.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.37777290000303765,
+      "input_s": 1.0
+    },
+    {
+      "recording": "25-3",
+      "start_s": 0.0,
+      "error": 3.552713678800501e-15,
+      "same_prediction": true,
+      "processing_s": 0.37787830000161193,
+      "input_s": 1.0
+    },
+    {
+      "recording": "25-3",
+      "start_s": 5.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.3870857999972941,
+      "input_s": 1.0
+    },
+    {
+      "recording": "25-3",
+      "start_s": 9.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.380685000000085,
+      "input_s": 1.0
+    },
+    {
+      "recording": "25-4",
+      "start_s": 0.0,
+      "error": 1.7763568394002505e-15,
+      "same_prediction": true,
+      "processing_s": 0.3845139000004565,
+      "input_s": 1.0
+    },
+    {
+      "recording": "25-4",
+      "start_s": 5.0,
+      "error": 3.552713678800501e-15,
+      "same_prediction": true,
+      "processing_s": 0.3828899999971327,
+      "input_s": 1.0
+    },
+    {
+      "recording": "25-4",
+      "start_s": 9.0,
+      "error": 1.7763568394002505e-15,
+      "same_prediction": true,
+      "processing_s": 0.38013890000001993,
+      "input_s": 1.0
+    },
+    {
+      "recording": "25-5",
+      "start_s": 0.0,
+      "error": 1.7763568394002505e-15,
+      "same_prediction": true,
+      "processing_s": 0.37442400000145426,
+      "input_s": 1.0
+    },
+    {
+      "recording": "25-5",
+      "start_s": 5.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.38933579999866197,
+      "input_s": 1.0
+    },
+    {
+      "recording": "25-5",
+      "start_s": 9.0,
+      "error": 1.7763568394002505e-15,
+      "same_prediction": true,
+      "processing_s": 0.3886732999999367,
+      "input_s": 1.0
+    },
+    {
+      "recording": "5",
+      "start_s": 0.0,
+      "error": 3.552713678800501e-15,
+      "same_prediction": true,
+      "processing_s": 0.3766935999992711,
+      "input_s": 1.0
+    },
+    {
+      "recording": "5",
+      "start_s": 5.0,
+      "error": 1.7763568394002505e-15,
+      "same_prediction": true,
+      "processing_s": 0.3839332999996259,
+      "input_s": 1.0
+    },
+    {
+      "recording": "5",
+      "start_s": 9.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.37259370000174385,
+      "input_s": 1.0
+    },
+    {
+      "recording": "5-1",
+      "start_s": 0.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.3773620000029041,
+      "input_s": 1.0
+    },
+    {
+      "recording": "5-1",
+      "start_s": 5.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.39056260000143084,
+      "input_s": 1.0
+    },
+    {
+      "recording": "5-1",
+      "start_s": 9.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.39270029999897815,
+      "input_s": 1.0
+    },
+    {
+      "recording": "5-2",
+      "start_s": 0.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.4004196000023512,
+      "input_s": 1.0
+    },
+    {
+      "recording": "5-2",
+      "start_s": 5.0,
+      "error": 3.552713678800501e-15,
+      "same_prediction": true,
+      "processing_s": 0.3810037999974156,
+      "input_s": 1.0
+    },
+    {
+      "recording": "5-2",
+      "start_s": 9.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.3796954999997979,
+      "input_s": 1.0
+    },
+    {
+      "recording": "5-3",
+      "start_s": 0.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.37698160000218195,
+      "input_s": 1.0
+    },
+    {
+      "recording": "5-3",
+      "start_s": 5.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.36928980000084266,
+      "input_s": 1.0
+    },
+    {
+      "recording": "5-3",
+      "start_s": 9.0,
+      "error": 2.6645352591003757e-15,
+      "same_prediction": true,
+      "processing_s": 0.37885259999893606,
+      "input_s": 1.0
+    },
+    {
+      "recording": "50",
+      "start_s": 0.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.37300559999857796,
+      "input_s": 1.0
+    },
+    {
+      "recording": "50",
+      "start_s": 15.0,
+      "error": 3.552713678800501e-15,
+      "same_prediction": true,
+      "processing_s": 0.37571329999991576,
+      "input_s": 1.0
+    },
+    {
+      "recording": "50",
+      "start_s": 29.0,
+      "error": 3.552713678800501e-15,
+      "same_prediction": true,
+      "processing_s": 0.3805624999986321,
+      "input_s": 1.0
+    },
+    {
+      "recording": "50-1",
+      "start_s": 0.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.36970860000292305,
+      "input_s": 1.0
+    },
+    {
+      "recording": "50-1",
+      "start_s": 15.0,
+      "error": 3.552713678800501e-15,
+      "same_prediction": true,
+      "processing_s": 0.38375669999732054,
+      "input_s": 1.0
+    },
+    {
+      "recording": "50-1",
+      "start_s": 29.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.37952429999859305,
+      "input_s": 1.0
+    },
+    {
+      "recording": "50-2",
+      "start_s": 0.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.37544140000318293,
+      "input_s": 1.0
+    },
+    {
+      "recording": "50-2",
+      "start_s": 15.0,
+      "error": 1.7763568394002505e-15,
+      "same_prediction": true,
+      "processing_s": 0.3791170000004058,
+      "input_s": 1.0
+    },
+    {
+      "recording": "50-2",
+      "start_s": 29.0,
+      "error": 3.552713678800501e-15,
+      "same_prediction": true,
+      "processing_s": 0.36517909999747644,
+      "input_s": 1.0
+    },
+    {
+      "recording": "50-3",
+      "start_s": 0.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.377610999999888,
+      "input_s": 1.0
+    },
+    {
+      "recording": "50-3",
+      "start_s": 15.0,
+      "error": 1.7763568394002505e-15,
+      "same_prediction": true,
+      "processing_s": 0.3754198000024189,
+      "input_s": 1.0
+    },
+    {
+      "recording": "50-3",
+      "start_s": 29.0,
+      "error": 1.7763568394002505e-15,
+      "same_prediction": true,
+      "processing_s": 0.3804063999996288,
+      "input_s": 1.0
+    },
+    {
+      "recording": "50-4",
+      "start_s": 0.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.37641579999763053,
+      "input_s": 1.0
+    },
+    {
+      "recording": "50-4",
+      "start_s": 15.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.38177450000148383,
+      "input_s": 1.0
+    },
+    {
+      "recording": "50-4",
+      "start_s": 29.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.38216950000060024,
+      "input_s": 1.0
+    },
+    {
+      "recording": "50-5",
+      "start_s": 0.0,
+      "error": 3.552713678800501e-15,
+      "same_prediction": true,
+      "processing_s": 0.3907971999979054,
+      "input_s": 1.0
+    },
+    {
+      "recording": "50-5",
+      "start_s": 15.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.38227009999900474,
+      "input_s": 1.0
+    },
+    {
+      "recording": "50-5",
+      "start_s": 29.0,
+      "error": 3.552713678800501e-15,
+      "same_prediction": true,
+      "processing_s": 0.374587899998005,
+      "input_s": 1.0
+    },
+    {
+      "recording": "50-6",
+      "start_s": 0.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.37689880000107223,
+      "input_s": 1.0
+    },
+    {
+      "recording": "50-6",
+      "start_s": 15.0,
+      "error": 3.552713678800501e-15,
+      "same_prediction": true,
+      "processing_s": 0.3736899000032281,
+      "input_s": 1.0
+    },
+    {
+      "recording": "50-6",
+      "start_s": 29.0,
+      "error": 3.552713678800501e-15,
+      "same_prediction": true,
+      "processing_s": 0.38032680000105756,
+      "input_s": 1.0
+    },
+    {
+      "recording": "50-7",
+      "start_s": 0.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.37547339999946416,
+      "input_s": 1.0
+    },
+    {
+      "recording": "50-7",
+      "start_s": 15.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.3755572000009124,
+      "input_s": 1.0
+    },
+    {
+      "recording": "50-7",
+      "start_s": 29.0,
+      "error": 3.552713678800501e-15,
+      "same_prediction": true,
+      "processing_s": 0.36958640000011656,
+      "input_s": 1.0
+    },
+    {
+      "recording": "50-8",
+      "start_s": 0.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.3693883000014466,
+      "input_s": 1.0
+    },
+    {
+      "recording": "50-8",
+      "start_s": 15.0,
+      "error": 1.7763568394002505e-15,
+      "same_prediction": true,
+      "processing_s": 0.3798609999976179,
+      "input_s": 1.0
+    },
+    {
+      "recording": "50-8",
+      "start_s": 29.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.3902773000008892,
+      "input_s": 1.0
+    },
+    {
+      "recording": "75",
+      "start_s": 0.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.3711690999989514,
+      "input_s": 1.0
+    },
+    {
+      "recording": "75",
+      "start_s": 30.0,
+      "error": 1.7763568394002505e-15,
+      "same_prediction": true,
+      "processing_s": 0.38264299999718787,
+      "input_s": 1.0
+    },
+    {
+      "recording": "75",
+      "start_s": 59.0,
+      "error": 1.7763568394002505e-15,
+      "same_prediction": true,
+      "processing_s": 0.37423409999973956,
+      "input_s": 1.0
+    },
+    {
+      "recording": "75-1",
+      "start_s": 0.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.37744390000079875,
+      "input_s": 1.0
+    },
+    {
+      "recording": "75-1",
+      "start_s": 30.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.3724502000004577,
+      "input_s": 1.0
+    },
+    {
+      "recording": "75-1",
+      "start_s": 59.0,
+      "error": 3.552713678800501e-15,
+      "same_prediction": true,
+      "processing_s": 0.37007619999712915,
+      "input_s": 1.0
+    },
+    {
+      "recording": "75-2",
+      "start_s": 0.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.3815553999993426,
+      "input_s": 1.0
+    },
+    {
+      "recording": "75-2",
+      "start_s": 30.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.380423200000223,
+      "input_s": 1.0
+    },
+    {
+      "recording": "75-2",
+      "start_s": 59.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.37548689999675844,
+      "input_s": 1.0
+    },
+    {
+      "recording": "75-4",
+      "start_s": 0.0,
+      "error": 1.7763568394002505e-15,
+      "same_prediction": true,
+      "processing_s": 0.37491009999939706,
+      "input_s": 1.0
+    },
+    {
+      "recording": "75-4",
+      "start_s": 30.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.37433299999975134,
+      "input_s": 1.0
+    },
+    {
+      "recording": "75-4",
+      "start_s": 59.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.37808399999994435,
+      "input_s": 1.0
+    },
+    {
+      "recording": "75-6",
+      "start_s": 0.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.3856489000027068,
+      "input_s": 1.0
+    },
+    {
+      "recording": "75-6",
+      "start_s": 30.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.37683349999861093,
+      "input_s": 1.0
+    },
+    {
+      "recording": "75-6",
+      "start_s": 59.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.3708165000025474,
+      "input_s": 1.0
+    },
+    {
+      "recording": "室内无无人机",
+      "start_s": 0.0,
+      "error": 1.7763568394002505e-15,
+      "same_prediction": true,
+      "processing_s": 0.37342899999930523,
+      "input_s": 1.0
+    },
+    {
+      "recording": "室内无无人机",
+      "start_s": 50.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.3793885999984923,
+      "input_s": 1.0
+    },
+    {
+      "recording": "室内无无人机",
+      "start_s": 99.0,
+      "error": 3.552713678800501e-15,
+      "same_prediction": true,
+      "processing_s": 0.37813269999969634,
+      "input_s": 1.0
+    },
+    {
+      "recording": "室外无无人机",
+      "start_s": 0.0,
+      "error": 8.881784197001252e-16,
+      "same_prediction": true,
+      "processing_s": 0.381409600002371,
+      "input_s": 1.0
+    },
+    {
+      "recording": "室外无无人机",
+      "start_s": 150.0,
+      "error": 0.0,
+      "same_prediction": true,
+      "processing_s": 0.4406868999976723,
+      "input_s": 1.0
+    },
+    {
+      "recording": "室外无无人机",
+      "start_s": 299.0,
+      "error": 3.552713678800501e-15,
+      "same_prediction": true,
+      "processing_s": 0.40954120000242256,
+      "input_s": 1.0
+    }
+  ]
+}

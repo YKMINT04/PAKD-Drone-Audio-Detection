@@ -1,17 +1,17 @@
-PAKD manuscript — current version — Table 8
+CWPKD manuscript — current version — Table 8
 Record type: derived manuscript-aligned result record
 This file is a concise result record, not a raw console or training log.
 
-Table 8. Component ablation of PAKD on the full DADS archive.
+Table 8. Component ablation of CWPKD on the full DADS archive.
 
 Tabulated results:
 Variant	CE	KL	Pairwise	Confidence	Consistency	Feature KD	AUC	Non-drone Recall	False Alarm Rate
-CE only	√						0.7392	0.6782	0.3217
+CE only	√						0.7392	0.6783	0.3217
 KL KD	√	√					0.8387	0.7923	0.2077
 Pairwise only	√		√				0.8010	0.6914	0.3086
 Pairwise + confidence	√		√	√			0.7742	0.7155	0.2845
 Pairwise + confidence + consistency	√		√	√	√		0.8030	0.6791	0.3209
-Full PAKD	√		√	√	√	√	0.9484	0.8917	0.1083
+Full CWPKD	√		√	√	√	√	0.9484	0.8917	0.1083
 
 Checkpoint references:
 - checkpoints/checkpoint_038.pth
@@ -20,3 +20,5 @@ Checkpoint references:
 - checkpoints/checkpoint_041.pth
 - checkpoints/checkpoint_034.pth
 - checkpoints/checkpoint_027.pth
+
+Full CWPKD is the main-experiment reference; its configuration differs from the intermediate ablations.

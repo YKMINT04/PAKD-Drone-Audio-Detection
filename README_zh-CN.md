@@ -1,85 +1,58 @@
-# PAKD：面向无人机声学检测的偏好对齐知识蒸馏
+# CWPKD无人机声学识别：送审材料
 
 [English](README.md) | **简体中文**
 
-本仓库是 PAKD（Preference-Aligned Knowledge Distillation）无人机声学检测研究的配套公开仓库，用于提供模型权重和实验结果记录。`v1.0-review-materials` 版本包含下文所述的论文v10.21阵列修订材料。
+本仓库对应一致性加权偏好知识蒸馏（CWPKD）论文，当前送审快照为`v1.0-review-materials`，与v10.25稿件同步。
 
-## 当前公开内容
+## 已公开内容
 
-- 53 个与论文实验对应的模型检查点，统一存放于 `checkpoints/`，并通过 Git LFS 管理；
-- 现场监督训练的阵列设备分类头：`checkpoints/array_v8_device_head.json`；
-- 12 个与论文 Tables 1–12 一一对应的结果记录，统一存放于 `results/`；
-- 检查点—实验—论文表格映射；
-- 覆盖二分类教师模型、轻量学生模型、同域测试、DADS 跨数据集测试、知识蒸馏方法比较、PAKD 组件消融、重复实验、三分类扩展、八麦克风阵列现场实验和边缘部署实验。
+- `checkpoints/`：53个编号检查点（C001–C053），通过Git LFS管理；另含设备分类头。
+- `results/`：论文表1–12的派生结果记录，不表述为原始训练日志。
+- `docs/checkpoint_experiment_mapping.txt`：权重、实验与表格的对应关系。
+- `results/array_v9_1s/`：当前阵列逐片段留出结果、补充整录音留出结果及99段复放核验记录。
 
-## 仓库目录
+## 实验与权重
 
-- `checkpoints/`：论文所报告实验对应的模型检查点；
-- `results/`：Tables 1–12 的数值结果记录；
-- `docs/checkpoint_experiment_mapping.txt`：每个检查点对应的论文表格与实验说明；
+| 表格 | 实验 | 检查点 |
+| --- | --- | --- |
+| 表1 | MFCC单分支与PriXFuse教师的特征分离度和紧致性 | C004、C052 |
+| 表2 | Mel学生无注意力、SE、TriTGate结构比较 | C001–C003 |
+| 表3 | 单分支、双分支及PriXFuse教师消融 | C004–C006、C052 |
+| 表4 | AST、CAM++、ConvNeXt-T、DASS、MobileNetV4、ResNet-50、ViT-MediumD及教师对比 | C007–C013、C052 |
+| 表5 | 单麦克风二分类测试集的学生与蒸馏配对 | C020–C031 |
+| 表6 | DADS外部教师—学生配对矩阵 | C020–C031 |
+| 表7 | 无蒸馏、AT、KD、NormKD、TRKD、DKD、RKD与CWPKD | C024、C027、C032–C037 |
+| 表8 | 偏好、置信度、一致性及特征监督配置 | C027、C034、C038–C041 |
+| 表9 | AT、无蒸馏与CWPKD各三次训练归档 | C014–C019、C024、C027、C032 |
+| 表10 | 三分类教师与蒸馏策略 | C042–C049、C053 |
+| 表11 | 覆盖5–120 m及室内外背景的1 s独立判别 | C027及线性设备分类头 |
+| 表12 | 学生网络边缘推理与连续运行 | C027 |
 
-## 论文实验与模型检查点
+C050–C052分别是LFCC、Mel和MFCC主分支二分类教师。一个权重可用于多个评价；具体关系见映射TXT。表9的三次CWPKD均使用MFCC主分支教师与Mel学生。表8完整模型是主实验参考项，不与中间消融构成严格单变量对照。
 
-检查点使用 `C001`–`C053` 的中性编号。完整文件名及其对应实验见 `docs/checkpoint_experiment_mapping.txt`。
+## v10.25阵列更新
 
-| 论文位置 | 实验内容 | 对应检查点 | 结果文件 |
-| --- | --- | --- | --- |
-| Table 1 | MFCC、LFCC 与 Mel 表示的定量分析，以及所选 MFCC-primary TripleFusion 二分类教师 | `C052` | `results/Table1_feature_representation.txt` |
-| Table 2 | 轻量 Mel 学生的注意力结构比较：无注意力、SE 和 MTFA | `C001`–`C003` | `results/Table2_mtfa_ablation.txt` |
-| Table 3 | 教师分支消融：MFCC 单分支、MFCC+LFCC、MFCC+Mel 与完整 TripleFusion 教师 | `C004`–`C006`, `C052` | `results/Table3_teacher_branch_ablation.txt` |
-| Table 4 | 自采测试集上的参考模型比较：AST、CAM++、ConvNeXt-Tiny、DASS、MobileNetV4、ResNet-50、ViT-MediumD和所选TripleFusion教师 | `C007`–`C013`, `C052` | `results/Table4_in_domain_reference_comparison.txt` |
-| Table 5 | 自采测试集上的学生任务学习与 PAKD 蒸馏结果；覆盖 LFCC、Mel、MFCC 学生及不同主教师组合 | `C020`–`C031` | `results/Table5_in_domain_distillation.txt` |
-| Table 6 | 完整 DADS 外部数据上的教师—学生组合矩阵与分类别跨数据集结果 | `C020`–`C031` | `results/Table6_teacher_student_matrix_dads.txt` |
-| Table 7 | DADS 上的蒸馏策略比较：任务损失、AT、Hinton KD、NormKD、TRKD-inspired、DKD、RKD 与 PAKD | `C024`, `C027`, `C032`–`C037` | `results/Table7_kd_strategy_comparison_dads.txt` |
-| Table 8 | PAKD 组件消融：CE/KL、成对偏好、置信度、分支一致性和特征蒸馏 | `C027`, `C034`, `C038`–`C041` | `results/Table8_pakd_component_ablation.txt` |
-| Table 9 | AT、任务损失学生与 PAKD 学生的多次跨数据集实验 | `C014`–`C019`, `C024`, `C027`, `C032` | `results/Table9_repeated_experiments.txt` |
-| Table 10 | 三分类扩展：任务损失、AT、Hinton KD、NormKD、TRKD-inspired、DKD、RKD、PAKD 及三分类 TripleFusion 教师 | `C042`–`C049`, `C053` | `results/Table10_three_class_results.txt` |
-| Table 11 | 33组5–120 m及背景录音的2 s片段开发复评；冻结CWPKD学生加现场监督RBF设备分类头 | C027 + array_v8_device_head.json | results/Table11_array_assisted_field_recognition.txt |
-| Table 12 | 所选轻量 Mel-PAKD 学生的边缘设备部署记录 | `C027` | `results/Table12_edge_deployment_records.txt` |
+原始八通道录音先切分为不超过1 s的片段，再独立进行波束处理、冻结学生特征提取和线性设备分类。学生C027不变，设备分类头使用现场标签训练；不使用相邻片段声音、跨片段状态或判别投票。
 
-除表格实验外，`C050`–`C052` 分别对应 LFCC-primary、Mel-primary 和所选 MFCC-primary TripleFusion 二分类教师，用于论文正文中的教师模型比较及 DADS 外部评价。部分模型在训练完成后被用于多个分析，因此同一检查点可同时对应多张论文表格；这种复用关系已在映射文件中明确记录。
+表11总体为1661/1678（98.99%），其中无人机1271/1278（99.45%）；120 m为84/90（93.33%），室内100/100，室外290/300（96.67%）。无人机按整段录音留一，背景按50 s连续块留出并排除前后10 s训练片段，属于分组开发复评。表格采用各折留出预测；`array_v9_1s_device_head.json`是全开发数据拟合的推理分类头，不能将其训练内结果视为表格成绩。
 
-## 主要实验材料说明
+笔记本99段回放的完整计算平均0.379 s，95%分位0.398 s，最大0.441 s，不含文件读取和首次加载。表12的边缘推理与超过300 h记录仍属于原学生实验。
 
-### 1. 教师模型与声学表示
+PAKD、TripleFusion、MTFA是归档接口旧名，现稿对应CWPKD、PriXFuse、MelTriGate/TriTGate。旧2 s与10 s结果、旧RBF分类头作为历史材料保留，不是当前表11。
 
-教师相关检查点覆盖 MFCC、LFCC 和 Mel 分支，以及单分支、双分支和完整 TripleFusion 结构。Table 1 与 Table 3 用于说明声学表示选择和教师分支融合的作用；正文中的外部评价进一步记录不同主分支教师在 DADS 上的表现。
-
-### 2. 轻量学生与 MTFA
-
-Table 2 对应的三个检查点用于比较无注意力、SE 和 MTFA。所选学生采用 Mel 输入与 MTFA 结构，并作为后续 PAKD 蒸馏和边缘部署的学生网络。
-
-### 3. 同域与跨数据集蒸馏
-
-Tables 5 和 6 共同覆盖 LFCC、Mel、MFCC 三类学生及 LFCC-primary、Mel-primary、MFCC-primary 教师组合。Table 5 记录自采测试集结果，Table 6 记录不参与训练的 DADS 外部数据结果，从而呈现同域性能与跨数据集泛化能力。
-
-### 4. 知识蒸馏对比与 PAKD 消融
-
-Table 7 收录任务损失学生、经典蒸馏方法、近期代表性蒸馏方法和 PAKD 的对比检查点。Table 8 进一步对应 PAKD 的成对偏好、置信度加权、分支一致性和特征蒸馏等组成部分，用于核查完整方法及各消融变体。
-
-### 5. 重复实验、三分类、阵列拓展与部署
-
-Table 9 汇总 AT、任务损失学生和 PAKD 学生的多次实验；其中三次 PAKD 运行均采用 MFCC-primary TripleFusion 教师和 Mel 学生。Table 10 将教师—学生蒸馏扩展到三分类任务，并提供所列各方法和三分类教师的检查点。Table 11现为33组录音的2 s片段开发复评，包含120 m，新增设备分类头；Table 12仍是原学生网络的边缘部署记录，并非新组合的端到端验证。
-
-## 下载模型权重
-
-模型权重由 Git LFS 管理。克隆仓库后可执行：
+## 下载
 
 ```bash
 git lfs install
 git lfs pull
 ```
 
-## 后续公开计划与长期维护承诺
+## 后续公开与长期维护
 
-本仓库将作为论文的长期公开存档持续维护，作者承诺永久保留仓库及公开历史，不在论文发表后删除。送审前整理阶段，v1.0标签更新至最新送审材料快照，旧快照通过提交历史保留；正式送审后，后续修订使用独立版本标签。
+本仓库作为论文的长期档案，作者承诺永久保留仓库及已发布历史，不会在论文发表后删除。送审前准备阶段的v1.0标签随最新材料更新，旧快照仍可通过提交历史访问；正式送审后的修订采用独立版本标签。
 
-- 论文正式发表后三日内，上传与最终论文对应的数据预处理、教师与学生模型、PAKD训练、评价、三分类扩展、八麦克风阵列处理及部署相关代码；
-- 论文正式发表后一周内，上传自采二分类、三分类数据集和5–120 m八麦克风阵列现场录音，并在本仓库提供稳定的下载链接与数据说明；
-- 代码、数据和文档更新完成后，将发布新的版本标签，同时保留当前送审版本以便追溯。
+- 正式发表后三天内，公开与终稿对应的预处理、师生模型、CWPKD训练、评价、三分类、麦克风阵列处理与部署代码。
+- 正式发表后一周内，公开单麦克风二分类、三分类及5–120 m麦克风阵列现场数据和持久下载链接。
+- 代码和数据发布后创建新标签，保留送审版本。
 
-本仓库中的模型、结果记录和实验映射共同构成当前论文实验的公开核查材料。论文正式发表后，仓库将进一步扩展为包含代码、数据访问和使用说明的完整项目页面。
-
-## v10.21阵列更新
-
-代码中的PAKD、TripleFusion和MTFA为历史名称；当前稿件使用CWPKD、PriXFuse和MelTriGate/TriTGate。此次只更新阵列结果，不重新核定其他表。评价覆盖33组录音，包含120 m两组，切分为840条不重叠且不超过2 s的片段。本送审包提供结果记录和设备分类头，录音及实现代码仍按上述计划发布。学生C027保持不变，新增现场标签训练的设备分类头。表11各场景开发复评均超过或达到90%；整条背景留出时室内4%、室外0%，结果不代表未见背景泛化。旧10 s记录保留在results/history，逐条证据位于results/array_v8_2s。新系统未做实时端到端或300 h验证。
+本次首批公开仍为权重、分类头及结果记录，代码与音频按上述计划公开。

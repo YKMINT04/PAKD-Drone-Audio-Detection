@@ -1,4 +1,4 @@
-PAKD manuscript — current version — Table 7
+CWPKD manuscript — current version — Table 7
 Record type: derived manuscript-aligned result record
 This file is a concise result record, not a raw console or training log.
 
@@ -14,7 +14,7 @@ NormKD-style	0.9637	0.9919	0.9776	0.8890	0.6346	0.7405	0.6925
 TRKD-inspired	0.9684	0.9914	0.9798	0.8902	0.6840	0.7736	0.7947
 DKD	0.9790	0.9912	0.9850	0.9016	0.7918	0.8431	0.8587
 RKD	0.9774	0.9915	0.9844	0.9034	0.7761	0.8349	0.8619
-PAKD (Ours)	0.9893	0.9909	0.9901	0.9093	0.8951	0.9021	0.9479
+CWPKD (Ours)	0.9893	0.9909	0.9901	0.9093	0.8951	0.9021	0.9479
 
 Checkpoint references:
 - checkpoints/checkpoint_032.pth
